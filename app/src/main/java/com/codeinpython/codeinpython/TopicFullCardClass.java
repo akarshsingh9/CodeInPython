@@ -1,19 +1,57 @@
 package com.codeinpython.codeinpython;
 
-public class TopicFullCardClass {
+ class TopicFullCardClass {
     private String mTitle;
     private int mTopicImage;
-    public TopicFullCardClass(String Title, int TopicImage)
+    private String mFirst;
+    private String mSecond;
+    private String mThird;
+    private String mFourth;
+    private String mFive;
+    private String mSixth;
+
+     TopicFullCardClass(String Title, int TopicImage, String mFirst, String mSecond, String mThird, String mFourth, String mFive, String mSixth)
     {
         this.mTitle = Title;
         this.mTopicImage = TopicImage;
+        this.mFirst = mFirst;
+        this.mSecond = mSecond;
+        this.mThird = mThird;
+        this.mFourth = mFourth;
+        this.mFive = mFive;
+        this.mSixth = mSixth;
     }
 
-    public String getmTitle() {
+     String getmTitle() {
         return mTitle;
     }
 
-    public int getmTopicImage() {
+     int getmTopicImage() {
         return mTopicImage;
     }
+
+     String getmFirst() {
+        return mFirst;
+    }
+
+     String getmSecond() {
+        return mSecond;
+    }
+
+     String getmThird() {
+        return mThird;
+    }
+
+     String getmFourth() {
+        return mFourth;
+    }
+
+     String getmFive() {
+        return mFive;
+    }
+
+     String getmSixth() {
+        return mSixth;
+    }
+
 }

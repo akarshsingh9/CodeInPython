@@ -1,3 +1,506 @@
 <resources>
     <string name="app_name">Code In Python</string>
+    <!--
+___________________________________________________________________________________________
+ Placeholder String resource for activity_layouts in all articles activities
+     -->
+    <string name="contentDescriptionImage">top banner image of the app</string>
+    <string name="heading">PYTHON TUTORIALS</string>
+    <string name="buttonTags">Tags</string>
+    <string name="output">Output:</string>
+    <string name="txt">i write the articles here</string>
+    <!--
+____________________________________________________________________________________________
+
+    All Articles as string resource
+-->
+
+
+    <string name="article"><![CDATA[
+    <p>If you are viewing this article then it might not be wrong to assume that you are a beginner in the field of programming.
+And you have high aspirations to become a professional programmer. Learning <b>Python</b> is a great way to start your programming career.
+So let us begin by clearing few concepts related to programming and python.</p>
+<h4>What is Programming?</h4>
+<p>Programming can be defined as a process of writing computer programs to make your work easy or to be more specific automated.
+You can complete your repetitive tasks by programming it beforehand using a computer program.</p>
+<h4>What is a Computer Program?</h4>
+<p>A computer program is a set of computer codes that gives instructions to the computer to perform a specific task. The computer will perform
+the task according to the logic coded in the computer program.</p>
+<h4>Is programming hard to learn?</h4>
+<p>The answer is a big <b>NO</b>. You just need to be logically sound and have the will to begin and complete the programming course we have designed for you for free.</p>
+<h4>What is CodeInPython and how it will help me?</h4>
+<p><b><i>CodeInPython</i></b> is your one-stop resource to learn python and python related platforms like <b>Django, Flask, PyGames, Kivy, etc</b>.
+Since people usually get confused where to apply python once they know their way around this programming language.
+We provide you free resources to learn them. But if you are want to work with us or contribute please drop us a message on our Facebook page.</p>
+    ]]></string>
+
+    <string name="aboutPython"><![CDATA[
+<p>Python is a widely used high-level programming language. It is an open source and general purpose programming language.
+Python uses an interpreter whereas the traditional programming languages like C, C++, Java is compiled on a compiler.
+Python syntax is simple and easy to write. It helps programmers to express the concept in fewer lines of code.
+The main advantage of using Python is it supports multiple programming paradigms such as object-oriented, imperative and functional programming styles.</p>
+<p>Some of the most notable <b>features</b> of <i>Python Programming Language</i> are as following:-
+</p>
+<p>
+1.	 Python has a large and comprehensive standard library.<br/><br/>
+2.	 Python is dynamic programming language unlike strongly typed static programming languages like Java, etc.<br/><br/>
+3.	 Python has an automatic memory management (Garbage Collection).<br/><br/>
+4.	 Express concepts in fewer lines of code.<br/><br/>
+5.	 Python focuses on code readability. Hence codes are intended using white spaces.<br/><br/>
+6.	 Python interpreters are available for many operating systems allowing Python code to run on a wide variety of systems.
+</p>
+
+<b>Source:</b><br/>
+<font color="blue">Wikipedia</font><br/>
+<font color="blue">Python Software Foundation</font
+
+    ]]></string>
+
+    <string name="windowsInstall"><![CDATA[
+     <p>Here we will provide step by step guide on <b>how to install Python</b> on your PC. It is recommended to stick to the latest release of Python.
+    Installing python is very easy just stick to the guide.</p>
+    <h4>Installation on Windows</h4>
+    <p>Visit <font color="blue">https://www(dot)python(dot)org/downloads/windows/ </font>and download the latest release <b>Python 3.5.2</b></p>
+    <p>If you have 32-bit Windows PC then download <b>“Windows x86 executable installer”</b>.
+    If you are a 64-bit Windows user then download <b>“Windows x86-64 executable installer”</b>.</p>
+    <p>Double-click on <b>python-3.5.2.exe</b> to start the installation process.</p>
+    <p>If given a choice between <b>Install Now</b> and <b>Customize installation</b> then choose the latter option.</p>
+    <p>Check all the boxes if not already done, make sure you have all the necessary python files and packages.
+    Install it for all the users on your PC; even if you are not logged in as administrator then also you will be able to run python.</p>
+    <p>Click <b>‘Next’</b> to continue to the next step of installation.</p>
+    <p>You will enter into <b>Advanced Options</b> selection in this step.
+    It is recommended to keep the checkboxes as it is and choose your install location as <b>“C:\\Python35”</b>
+    so that all your important python files are safely installed in <b>C:</b> drive. Click <b>Install</b> button to start the installation.</p>
+    <p>Wait until the installation of Python 3.5.2 is complete.
+    Click <b>‘Close’</b> to exit from the installation wizard and you are good to go.</p>
+    <h6>You have successfully installed Python 3.5.2 on your Windows system.<h6>
+
+
+    ]]></string>
+
+    <string name="macinstall"><![CDATA[
+
+    <p>Here we will provide step by step guide on <b>how to install Python</b> on your PC.
+    Here we will show you how to install Python 3.5.2 for Mac operating system. Follow the guide below.</p>
+    <p><b>NOTE:</b> Python comes installed along with <b>Mac OS X;</b> although you can make sure you have the latest version of
+    Python by installing the current build from the Python website.</p>
+    <p>Visit <font color="blue">https://www(dot)python(dot)org/downloads/mac-osx/ </font>and download the latest release <b>Python 3.5.2</b></p>
+    <p>Run installer package downloaded from the website and you will see a <b>Welcome</b> screen press <b>Continue</b> to begin the installation process.</p>
+    <p>After clicking continue, you will see <b>Important Information</b> which has information like system requirements for installing and
+    running Python in your Mac OS X. Read it carefully and press <b>Continue.</b></p>
+    <p>Then you will see the <b>Software License Agreement.</b> Read the agreement and then you need to press <b>Continue</b> to move forward with
+    the installation procedure.</p>
+    <p>Next step will ask for a destination to install your python software.
+    Select the destination for installation or leave the location as it is which is predefined for you and press <b>Continue.</b></p>
+    <p>Next step will ask for installation type, select the tools and frameworks you need in your system or leave it as it is and
+    press <b>Install</b> to begin the installation.</p>
+    <p>After the installation is complete press <b>Continue</b> which loads the <b>Summary</b> page. Close the summary page.</p>
+    <h6>Python is now installed on your Mac OS X.</h6>
+
+
+    ]]></string>
+
+    <string name="textEditors"><![CDATA[
+
+    <p>Python programming language is quite flexible in terms of writing codes.
+    Whether you are a Windows user or a Linux user you can use any text editor or an <b>IDE(Integrated Development Environment)</b> to write your python source code.
+    We will provide you a list of text editors and IDE for both windows and Linux platform.<p>
+    <p><b>NOTE:</b> Remember that all python files ar saved with a .py extension. You have to write the name of your file and then add .py in the end.
+     For example: sum.py, user_input.py, etc.</p>
+    <h4>Windows:</h4>
+    Notepad++<br/>
+    Sublime Text<br/>
+    IDLE<br/>
+    PyCharm<br/>
+    <h4>Linux</h4>
+    Gedit<br/>
+    PyCharm<br/>
+    Spyder IDE<br/>
+    Sublime Text<br/>
+    Using nano command in Terminal and save file in .py format
+    <h6>For our tutorial purpose, we will stick to IDLE as our primary python editor.</h6>
+
+
+    ]]></string>
+
+    <string name="helloWorld"><![CDATA[
+        <p>We will create a <b>Hello World program</b> in Python. This will be your first python code.</p>
+        <h6>Create a new python file:</h6>
+        <font color="#388e3c">Open IDLE  => File => New File</font>
+        Keyboard Shorcut: <b>(Ctrl + N)</b>
+        <h6>Save this new file as helloWorld.py</h6>
+        <font color="#388e3c">File => Save as => Choose Desktop => Write helloWorld.py  => Click <b>\“Save\"</b></font>
+        <p>Now in the text editor write the following code</p>]]></string>
+<string name="helloWorld2"><![CDATA[
+        <h6>To execute the above python program.</h6>
+        <font color="#388e3c">Click ‘Run’ => Run Module</font>
+        <p>The python code above displays the string within the quotes and parenthesis of the built-in print() function.
+        To display anything as an output to the user there is a built-in function in Python3 called  print().</p>
+        <h6>Congratulations ! you have successfully written your first python program.</h6>
+
+    ]]></string>
+
+    <string name="print"><![CDATA[
+        <p>Every programming has some construct to display output to the screen.
+        Printing the output will show the final result of our code to the user, hence it is important.
+        Python has a built-in function called <b>print()</b> to display the output to the user.
+        Notice that there is no semicolon at the end of the statement.</p><p>Example:</p>]]></string>
+
+    <string name="print2"><![CDATA[
+        <p>Syntax for print() is simple:<br/>
+        1.	To display string:<br/>
+            &nbsp;&nbsp;&nbsp;<font color="#673ab7">print</font>(<font color="#004d40">“ put your string here</font> ”)<br/>
+        2.	To output data stored in a variable.<br/>
+            &nbsp;&nbsp;&nbsp;<font color="#673ab7">print</font>(variable)<br/>
+        3.	To display both string and variable separate them by a comma and put them within parenthesis.<br/>
+           &nbsp;&nbsp;&nbsp;<font color="#673ab7">print</font>(<font color="#004d40">“your string”</font>, variable)</p>
+    ]]>
+    </string>
+
+    <string name="input"><![CDATA[
+        <p>Python makes it quite easy to take input from the user.
+        Python has a built-in function called <b>input()</b>.
+        This function will take input from the user in form of a string.
+        String in python is nothing but a sequence of characters.
+        You can store that input in a variable and then can either manipulate
+        the user input or you can print it using the print() function.</p>
+        Example:]]>
+    </string>
+    <string name="input2"><![CDATA[
+        <p>The statement within the input() function parenthesis is called a <b>prompt.</b>
+        Instead of  writing a print() statement to prompt the user to enter their details,
+        use the prompt provided by built-in input() function.</p>
+        <p>The syntax for input is quite simple:<br/>
+        1.	Input a string from user:<br/>
+        <font color="#388e3c">var = input(“Enter your prompt”)</font><br/>
+        2.	Input an integer value from user:<br/>
+        <font color="#388e3c">var = int(input(“Enter your prompt”))</font><br/>
+        3.	Input a float value from user:<br/>
+        <font color="#388e3c">var = float(input(“Enter your prompt”))</font></p>
+
+      ]]>
+    </string>
+
+    <string name="variables"><![CDATA[
+        <p>The concept of variables is same in any programming language.
+        A <b>variable</b> is nothing but a memory location that is capable of storing some data or a specified value.
+        Whenever you create a variable you reserve some space in memory to store the desired information.</p>]]>
+    </string>
+    <string name="variables2"><![CDATA[
+    <p>You can consider a variable as a box with some empty space.
+    Here a value or a data is your item that you want to store in this box. </p>
+    ]]></string>
+
+    <string name="datatypes"><![CDATA[
+    <p><b>Data types</b> article are the means to identify the types of data used in a programming language.
+    With the help of data types, we can identify the type of data and then perform associated operations.
+    Python has <b>five standard data types</b> to classify the type of data and perform operations on them.</p>
+    <p>The five standard data types are −<br/>
+    •	Numbers<br/>
+    •	String<br/>
+    •	List<br/>
+    •	Tuple<br/>
+    •	Dictionary</p>
+
+
+    ]]></string>
+    <string name="numbers"><![CDATA[
+        <p>In <b>Python</b>, everything is an object hence python has a separate <b>Numbers</b> class and all the integer and real numbers are objects in python.
+        Python’s number data types store numeric values.
+        Since the number is an object in python it is created once you <b>assign a value</b> to them. </p>
+        <p>Python supports the following different number types −<br/>
+        •	<b>int</b> (integers)<br/>
+        •	<b>float</b> (floating point value)<br/>
+        •	<b>complex</b> (complex numbers)</p>
+        <p>1)<b>Integers</b> are the numbers without any decimal values. They are either positive or negative integer values.</p><br/>
+        <font color="#00838f">Example: 23, -10, -100, 35, etc.</font>
+        <p>2)<b>Float or floating values</b> are the real numbers. They consist of decimal values and can be either positive or negative float values.</p><br/>
+        <font color="#00838f">Example: 10.5, 29.15, -19.7, -12.3, 12.3 + e18, etc.</font>
+        <p>3)<b>Complex</b> number consists of an ordered pair of real numbers in which both of them are of type float denoted by x + yj,
+        where x and y are the real numbers and j is the imaginary unit.</p><br/>
+        <font color="#00838f">Examples: 3+5j, 3.5j, 4e+21j</font>
+
+        <p>These are the number type that is supported by Python3. There is also some built-in function that python supports along with these numbers. Check out PyStore </p>
+        ]]></string>
+
+    <string name="strings"><![CDATA[
+        <p>Strings are one the most important data types in Python.
+        The <b>string</b> is defined as a combination of more than one character placed <i>contiguously</i> with quotation marks.</p>
+        <p>In other programming languages a string is enclosed only in double quotes.
+        But in Python we have the freedom to put our string in either double or single quotes.</p>
+        <p>Python treats single quotes same as double quotes.</p>
+        ]]>
+    </string>
+    <string name="strings2"><![CDATA[
+        <h4>Creating a String</h4>
+        <p>Creating a string is quite simple you just have to put a combination of characters within quotes and
+        then assign it to a variable.</p>
+        <h4>Accessing an element in string</h4>
+        <p>Now accessing an element in the string follows the concept of an <b>index.</b>
+        Let our string variable be <b>y = “Hello”.</b> Now to access letter <b>‘e’</b> we will call <b>y[1].</b>
+        Index in string starts from <b>0</b> and the last letter will have <b>(string length – 1)</b> index.</p>
+        ]]>
+    </string>
+    <string name="lists"><![CDATA[
+        <p>•	A <b>List</b> is a sequence datatype.<br/>
+        •	A list can consist all elements either as numbers or characters or a combination of both.<br/>
+        •	The arrangement of the elements in a list is not specified (it can be sorted or unsorted).<br/>
+        •	Every element has a particular <b>index.</b><br/>
+        •	The element can be called or deleted or replaced by another number using the index of that element.</p>
+    ]]>
+    </string>
+    <string name="lists2"><![CDATA[
+        <p>Some built-in functions in Lists are:-</p>
+        <p>1)	<b>append(x)</b> – this keyword is used to add item x at the end of the list<br/>
+        2)	<b>insert(i, x)</b> – this keyword is used to insert item x at position i.<br/>
+        3)	<b>sort()</b> – this keyword is used to sort items in a list in ascending order.<br/>
+        4)	<b>reverse()</b> – this keyword is used to reverse the order of items in the list.<br/>
+        5)	<b>clear()</b> – this keyword is used to remove all items and empty the list.</p>
+        <h6>Get the complete list of built-in functions from our <b>PyStore.</b></h6>
+        ]]>
+    </string>
+    <string name="dictionary"><![CDATA[
+        <p>We have stored values in variables and lists. Dictionary stores values a bit differently.</p>
+        <p>• Dictionary stores value using a key.<br/>
+        •	Keys are mapped directly to the values.<br/>
+        •	A dictionary defines values using a key.<br/>
+        •	It is like a hash table. </p>
+        <h4>Creating Dictionary</h4>
+        <p><b>Dictionary</b> is enclosed in <b>curly braces ({})</b> and every key- value pair is separated by <b>commas.</b>
+        The key and its value are specifically separated by a <b>colon (:).</b></p>
+        It is just like English dictionary, the keys are the words and the values are their meanings.
+        ]]>
+    </string>
+
+    <string name="tuples"><![CDATA[
+
+            <p>Tuples are sequence data types that are similar to lists. Tuples are <b>immutable lists.</b>
+            It contains a set of numbers or characters or a combination of both separated by commas and enclosed within parenthesis (<b>()</b>).
+            Lists are enclosed in <b>square brackets ([])</b> whereas tuples are enclosed in <b>parenthesis</b> [<b>()</b>].</p>
+            <p>The one thing that separates tuples from lists is that elements and size of a <b>list</b> can be changed whereas
+            <b>tuples</b> cannot be updated. Tuples can be considered as read-only lists.</p>
+    ]]>
+    </string>
+
+    <string name="ifStatement"><![CDATA[
+        <p>Ever thought how would I implement a certain block of code if it satisfies certain condition?
+        <b>if</b> is a conditional statement. The <b>if</b> statement gives a specific condition to the code.
+        If that condition is <font color="#673ab7">true</font> then the block of code under <b>if</b> is executed otherwise it will jump to the next statement.</p>
+        ]]>
+    </string>
+
+    <string name="elseStatement"><![CDATA[
+        <p>An <b>else</b> statement can be combined with an <b>if</b> statement.
+        An <b>else</b> statement contains the block of code that executes
+        if the conditional expression in the <b>if</b> statement resolves to a <font color="#673ab7">false</font> value.</p>
+        <p>The else statement is an optional statement and there can be at most one else
+        statement following the if statement.</p>
+        ]]>
+    </string>
+
+    <string name="elifStatement"><![CDATA[
+       <p><b>elif</b> statement in Python is equivalent to <font color="#673ab7">else if</font> statement in other programming languages.
+           <b>elif</b> is just an additional if statement in a program. Just like <font color="#673ab7">else</font>, elif is also an optional statement.
+           There can only be one if statement but as many elif statements as you want.</p>
+       ]]>
+    </string>
+    <string name="nestedif"><![CDATA[
+        <p>In some situations, you might want to check another condition inside given <font color="#673ab7">if</font> condition. Nested if construct
+        is used to solve this situation. You can place as many <b>nested-if</b> within an <font color="#673ab7">if</font> statement as you want.</p>
+        ]]>
+    </string>
+
+    <string name="functions"><![CDATA[
+        <p>A <b>function</b> consists of a block of code with which we can perform some kind action.
+        Now instead of writing that particular code repeatedly when a certain action is required we can just call the function.</p>
+        <p>This promotes code reusability and modularity. Functions help us to write clean codes. The code we write becomes more readable.
+        Apart from built-in functions provided by Python, we can create our own functions these functions are called <b>user-defined functions.</b></p>
+        ]]>
+    </string>
+
+    <string name="defineFunction"><![CDATA[
+            <p>You have to define the functions and provide them the required functionality.
+            You define a function by using the syntax given and write the logic in the function body.</p>
+            <p>Here are some rules to define a function in Python -<br/>
+            •	The function begins with the keyword <font color="#673ab7"><b>def</b></font> followed by the <b>function_name</b> and parentheses <b>( )</b>.<br/><br/>
+            •	You should put all your input parameters or arguments within these parentheses.<br/><br/>
+            •	The block of code within every function which constitutes <b>function_body</b> while defining the function starts with a <b>colon (:)</b>. The function body is <b>indented</b> to show that the function is defined.<br/><br/>
+            •	The statement <font color="#673ab7"><b>return</b></font> exits a function. The keyword <font color="#673ab7"><b>return</b></font> also helps in passing back an expression to the caller of the function.<br/><br/>
+</p>]]>
+    </string>
+
+    <string name="callFunction"><![CDATA[
+
+        <p>Once the basic definition of a function is completed,
+        you can execute the function by calling it from some other function or directly from the Python prompt.</p>
+        ]]>
+    </string>
+
+    <string name="defaultArguments"><![CDATA[
+        <p>Many times we come across a situation where we want a default value to be taken if the user has not input any value from their side.
+        A default argument comes to rescue in these situations if we are defining a function.
+        A default argument is an argument that assumes a default value if a value is not provided in the function call for that argument.</p>
+        ]]>
+
+    </string>
+
+    <string name="forloop"><![CDATA[
+
+       <p> For loop is a looping statement that is used when it is known beforehand how many times the loop has to run.
+        Therefore it is already defined the number of times for loop will iterate.
+        The for loop has an ability to iterate over any kind of sequential data type like list or string.
+        The for loop like the while loop is also an entry controlled loop,
+        the condition is tested before iteration and if the condition is true then for loop executes.
+       </p>
+    ]]>
+    </string>
+    <string name="whileloop"><![CDATA[
+        <p>While is a type of looping statement where the number times of the statement will iterate is decided by the condition of the loop.
+        If the condition is true then the loop will execute otherwise it will terminate and will execute statement after the loop.
+        While is an entry controlled loop where the condition of the loop is tested before entering the loop body.
+        </p>]]>
+    </string>
+
+    <string name="oop"><![CDATA[
+        <p>
+            Python supports object-oriented programming.
+            Object oriented programming has following features which make real world
+            modeling easy compared to procedural programming.</p>
+        <p>
+            1)	<b>Encapsulation</b><br/>
+            2)	<b>Abstraction or Data Hiding</b><br/>
+            3)	<b>Polymorphism</b><br/>
+            4)	<b>Inheritance</b><br/>
+
+        </p>
+        <p>
+            Object oriented programming is implemented using <b>class</b>.<br/>
+            A <b>class</b> is a user-defined data type in which we can enclose variables and functions.
+            To access these functions and variables we use <b><i>objects</i></b>.
+        </p>]]>
+    </string>
+
+    <string name="encapsulation"><![CDATA[
+        <p>
+        Wrapping of code and data together into a single unit is known as <b>encapsulation</b>.
+        Object-oriented programming provides you the framework to place the data and the
+        relevant functions together in the same object encapsulated under a class.
+        </p>]]>
+    </string>
+
+    <string name="abstraction"><![CDATA[
+        <p>
+            <b>Data abstraction</b> refers to the process of providing only the essential information
+            to the outside world or users and hiding their background details.
+            Data Abstraction or data hiding will only represent the important information in the
+            program that user needs to know without presenting the details behind it.
+        </p>
+            ]]>
+    </string>
+
+    <string name="inheritance"><![CDATA[
+        <p>
+            <b>Inheritance</b> is the process of forming a new class from an existing class.
+            The existing class is called the <b>base class</b> and the new class formed is called the <b>derived class</b>.</p>
+        <p>
+            The derived class has access to all the data members and functions since it is inheriting those
+            from the base class. So in derived class, we have to add new functionalities or override the
+            existing one derived from the base class.</p>
+        <p>
+            One of the most important aspects of object-oriented programming is <b><i>code reusability</i></b> and
+            inheritance successfully helps to achieve so and reduces code size.
+        </p>
+        <p>
+            <b>For example:</b><br/> We have a class <b><i>Animal</i></b> which has attributes like <i>size, color, voice</i> and functions
+            like <i>hasOwner(), hasName(), getDetails()</i>, etc. Now if we define a class <b>Dog</b> to create new
+            <i>Dog</i> objects then instead of writing all the functionality separately for <i>Dog</i> class
+            we can inherit them from <i>Animal</i> Class.
+            We can add our own attributes in Dog class like breed, height, etc. apart from those inherited.
+        </p>]]>
+    </string>
+
+
+    <string name="polymorphism"><![CDATA[
+        <p>
+        The ability to use an operator or function in different ways by giving them different functionality to the operators or functions is called <b>Polymorphism</b>. <i>Poly</i> refers to many.
+        The function name or operator remains the same. They differ by a number of arguments or
+        type of arguments while defining them.</p>
+        <p>
+        <b>For example,</b><br/> An operator <b>\'+\'</b> can be used to add two numbers in python.
+        But we are also allowed to concatenate two strings using <b>\'+\'</b> operator.
+        This is due to polymorphism that <b>‘+’</b> has an additional function to concatenate strings.
+        </p>]]>
+    </string>
+
+    <string name="classes"><![CDATA[
+        <p>
+            The object oriented concepts in python programming can be implemented using
+            classes and objects. In this article, you will learn how to create class and object.</p>
+            <h4>Creating Classes</h4>
+            <p>The <font color="#673ab7"><b>class</b></font> statement in python programming creates a new class declaration.
+                A class is created by using the <font color="#673ab7"><b>class</b></font> keyword followed by the <b><i>ClassName</i></b> and a <b>colon</b>.
+            From the next line onwards, the indented code constitutes the class body.
+                The <i>class_body</i> consists of all the components to define the class such as class members and functions.
+                </p>]]>
+
+    </string>
+
+    <string name="init"><![CDATA[
+        <p>
+            method __init__() is a special method or function, which is called a class constructor or initialization method. Python calls this method every time when you create a new instance or object of this class. According to the concepts of classes, class attributes can be assigned values from inside the class. To assign them values every time you create an object of the class you need to use a constructor.
+            A constructor is a special function whose sole purpose is to assign values to the class variables.
+        </p>]]>
+    </string>
+
+    <string name="Objects"><![CDATA[
+        <p>
+            To create objects of a class, you have to call the
+            class using <b>ClassName</b> you have used and you have to pass in all
+            the arguments that its <font color="#673ab7"><b>__init__</b></font> method accepts.
+        </p>
+
+      ]]>
+    </string>
+
+     <string name="Objects2"><![CDATA[
+        <p>
+            You access the object\'s attributes or class members such as functions using the <b>dot operator</b> with the object.
+            On other hand, class variable would be accessed using <i>ClassName</i> followed by a dot operator  −
+        </p>
+
+      ]]>
+    </string>
+
+    <string name="Objects3"><![CDATA[
+           <h4>Data Hiding</h4>
+            <p>An object\'s attributes can or cannot be made visible outside the class definition.
+            It is similar to making an object’s attribute private in the class definition.
+            You need to name the attributes with a double underscore prefix to the name of the attribute.
+            <br/>Example: __name, __age
+
+        </p>
+
+            <h4>Destroying Objects (Garbage Collection)</h4>
+            <p>In Python everything is an object, all the data types like numbers, string, list, etc, operators,
+            built-in functions, all are python objects. Python deletes unnecessary objects such built-in types
+            or class instances automatically to free the memory space. The process by which Python periodically
+            claims the blocks of memory that are no longer in use is termed Garbage Collection.
+            </p>
+
+      ]]>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_code_sample">codeSampleActivity</string>
+
+    <!--
+__________________________________________________________________________________________________
+All headings in  as string resource
+-->
+
+
 </resources>
+
+
+

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.codeinpython.codeinpython.quiz1Fragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="2. What does Python support as a programming language?"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Object Oriented Programming"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Functional Programming"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Procedural Programming"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All of the Above"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            android:id="@+id/question2"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="Submit"
+        android:id="@+id/submitans2"/>
+</LinearLayout>

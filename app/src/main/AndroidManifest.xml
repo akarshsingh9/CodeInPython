@@ -10,7 +10,6 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:noHistory="true"
             android:theme="@style/splashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +20,11 @@
         <activity
             android:name=".IntroActivity"
             android:noHistory="true" />
-        <activity android:name=".TopicMenuActivity"></activity>
+        <activity android:name=".TopicMenuActivity" />
+        <activity android:name=".TutorialsActivity" />
+        <activity android:name=".codeSampleActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".ScoreActivity"></activity>
     </application>
 
 </manifest>

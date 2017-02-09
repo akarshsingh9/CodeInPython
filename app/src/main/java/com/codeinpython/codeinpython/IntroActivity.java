@@ -28,7 +28,7 @@ public class IntroActivity extends AppIntro {
 
         int img1 = R.drawable.pythonlogo;
 
-        addSlide(AppIntroFragment.newInstance(title1,des1,img1, Color.parseColor("#EC407A")));
+        addSlide(AppIntroFragment.newInstance(title1,des1,img1, Color.parseColor("#009688")));
         addSlide(AppIntroFragment.newInstance(title2,des2,img1, Color.parseColor("#9C27B0")));
         addSlide(AppIntroFragment.newInstance(title3,des3,img1, Color.parseColor("#1E88E5")));
         addSlide(AppIntroFragment.newInstance(title4,des4,img1, Color.parseColor("#FFEB3B")));

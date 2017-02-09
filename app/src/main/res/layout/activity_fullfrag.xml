@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <ImageView
+            android:contentDescription="@string/contentDescriptionImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner"
+            android:adjustViewBounds="true"
+            android:id="@+id/bannerfrag4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="@string/heading"
+                android:id="@+id/headingfrag4"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/articlefrag4"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:fontFamily="serif"
+                android:textSize="@dimen/article_text"
+                android:textColor="#FF3B3B3B"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/codefrag4"
+                android:text="@string/txt"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:fontFamily="monospace"
+                android:textSize="@dimen/article_text"
+                android:textColor="@android:color/black"
+                android:background="#b0bec5"
+                android:padding="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/output"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="serif"
+                android:textSize="@dimen/article_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/outputfrag4"
+                android:text="@string/txt"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:fontFamily="monospace"
+                android:textSize="@dimen/article_text"
+                android:textColor="@android:color/black"
+                android:background="#b0bec5"
+                android:padding="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subarticlefrag4"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:fontFamily="serif"
+                android:textSize="@dimen/article_text"
+                android:textColor="#FF3B3B3B"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_gravity="right"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:id="@+id/nextpage4"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
