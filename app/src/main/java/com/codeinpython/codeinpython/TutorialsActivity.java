@@ -9,10 +9,23 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.ViewGroup;
 
 import static com.codeinpython.codeinpython.R.id.viewPager;
 
 public class TutorialsActivity extends AppCompatActivity {
+    TabLayout tabLayout;
+    TabLayout tabLayout1;
+    TabLayout tabLayout2;
+    TabLayout tabLayout3;
+    TabLayout tabLayout4;
+    TabLayout tabLayout5;
+    TabLayout tabLayout6;
+    TabLayout tabLayout7;
+    TabLayout tabLayout8;
+
+//*****************************************************************************************************************************
+    // Start of onCreate()
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +37,15 @@ public class TutorialsActivity extends AppCompatActivity {
         switch (pages)
         {
             case 0:
+
+                //---------------------------------------------------------------------------------
+                // Toolbar initializing for tutorials viewpager
+
                 Toolbar toolbar = (Toolbar) findViewById(R.id.toolbartuts);
                 setSupportActionBar(toolbar);
                 //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+               // Back Button functionality
                toolbar.setNavigationIcon(R.drawable.backbutton);
                 toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                     @Override
@@ -35,11 +53,16 @@ public class TutorialsActivity extends AppCompatActivity {
                         onBackPressed();
                     }
                 });
-
-                TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layouttuts);
+               //-----------------------------------------------------------------------------------
+               // Tabs on the tutorials by Tablayout
+                tabLayout = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout.addTab(tabLayout.newTab().setText("Intro to Programming"));
                 tabLayout.addTab(tabLayout.newTab().setText("Python Intro"));
-                tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+                //tabLayout.setTabGravity(TabLayout.GRAVITY_CENTER);
+                //Attach a Runnable to handle tabs width according to screen size
+                tabLayout.post(tabLayout_config);
+                //-----------------------------------------------------------------------------------
+                //ViewPager intialzing
                 final ViewPager pager = (ViewPager)findViewById(viewPager);
                 pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
                 pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
@@ -71,11 +94,12 @@ public class TutorialsActivity extends AppCompatActivity {
                     }
                 });
 
-                TabLayout tabLayout1 = (TabLayout) findViewById(R.id.tab_layouttuts);
+                tabLayout1 = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout1.addTab(tabLayout1.newTab().setText("Windows"));
                 tabLayout1.addTab(tabLayout1.newTab().setText("Mac OS"));
                 tabLayout1.addTab(tabLayout1.newTab().setText("Text Editor/IDE"));
-                tabLayout1.setTabGravity(TabLayout.GRAVITY_FILL);
+                //tabLayout1.setTabGravity(TabLayout.GRAVITY_FILL);
+                tabLayout1.post(tabLayout_config1);
                 final ViewPager pager1 = (ViewPager)findViewById(viewPager);
                 pager1.setAdapter(new MyPagerAdapter1(getSupportFragmentManager()));
                 pager1.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout1));
@@ -107,11 +131,12 @@ public class TutorialsActivity extends AppCompatActivity {
                     }
                 });
 
-                TabLayout tabLayout2 = (TabLayout) findViewById(R.id.tab_layouttuts);
+                tabLayout2 = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout2.addTab(tabLayout2.newTab().setText("Hello World"));
                 tabLayout2.addTab(tabLayout2.newTab().setText("Using print()"));
                 tabLayout2.addTab(tabLayout2.newTab().setText("Using input()"));
-                tabLayout2.setTabGravity(TabLayout.GRAVITY_FILL);
+                //tabLayout2.setTabGravity(TabLayout.GRAVITY_FILL);
+                tabLayout2.post(tabLayout_config2);
                 final ViewPager pager2 = (ViewPager)findViewById(viewPager);
                 pager2.setAdapter(new MyPagerAdapter2(getSupportFragmentManager()));
                 pager2.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout2));
@@ -143,14 +168,15 @@ public class TutorialsActivity extends AppCompatActivity {
                     }
                 });
 
-                TabLayout tabLayout3 = (TabLayout) findViewById(R.id.tab_layouttuts);
+                tabLayout3 = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout3.addTab(tabLayout3.newTab().setText("Variables"));
                 tabLayout3.addTab(tabLayout3.newTab().setText("Lists"));
                 tabLayout3.addTab(tabLayout3.newTab().setText("Numbers"));
                 tabLayout3.addTab(tabLayout3.newTab().setText("Tuples"));
                 tabLayout3.addTab(tabLayout3.newTab().setText("Strings"));
                 tabLayout3.addTab(tabLayout3.newTab().setText("Dictionary"));
-                tabLayout3.setTabGravity(TabLayout.GRAVITY_FILL);
+                //tabLayout3.setTabGravity(TabLayout.GRAVITY_FILL);
+                tabLayout3.post(tabLayout_config3);
                 final ViewPager pager3 = (ViewPager)findViewById(viewPager);
                 pager3.setAdapter(new MyPagerAdapter3(getSupportFragmentManager()));
                 pager3.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout3));
@@ -183,13 +209,13 @@ public class TutorialsActivity extends AppCompatActivity {
                     }
                 });
 
-                TabLayout tabLayout4 = (TabLayout) findViewById(R.id.tab_layouttuts);
+                tabLayout4 = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout4.addTab(tabLayout4.newTab().setText("if"));
                 tabLayout4.addTab(tabLayout4.newTab().setText("else"));
                 tabLayout4.addTab(tabLayout4.newTab().setText("elif"));
                 tabLayout4.addTab(tabLayout4.newTab().setText("Nested if"));
-                tabLayout4.setTabGravity(TabLayout.GRAVITY_FILL);
-
+                //tabLayout4.setTabGravity(TabLayout.GRAVITY_FILL);
+                tabLayout4.post(tabLayout_config4);
                 final ViewPager pager4 = (ViewPager)findViewById(viewPager);
                 pager4.setAdapter(new MyPagerAdapter4(getSupportFragmentManager()));
                 pager4.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout4));
@@ -221,10 +247,11 @@ public class TutorialsActivity extends AppCompatActivity {
                         onBackPressed();
                     }
                 });
-                TabLayout tabLayout5 = (TabLayout) findViewById(R.id.tab_layouttuts);
+                tabLayout5 = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout5.addTab(tabLayout5.newTab().setText("Functions in Python"));
                 tabLayout5.addTab(tabLayout5.newTab().setText("Calling functions in Python"));
-                tabLayout5.setTabGravity(TabLayout.GRAVITY_FILL);
+                //tabLayout5.setTabGravity(TabLayout.GRAVITY_FILL);
+                tabLayout5.post(tabLayout_config5);
 
                 final ViewPager pager5 = (ViewPager)findViewById(viewPager);
                 pager5.setAdapter(new MyPagerAdapter5(getSupportFragmentManager()));
@@ -257,10 +284,11 @@ public class TutorialsActivity extends AppCompatActivity {
                         onBackPressed();
                     }
                 });
-                TabLayout tabLayout6 = (TabLayout) findViewById(R.id.tab_layouttuts);
+                tabLayout6 = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout6.addTab(tabLayout6.newTab().setText("for loop in Python"));
                 tabLayout6.addTab(tabLayout6.newTab().setText("while loop in Python"));
-                tabLayout6.setTabGravity(TabLayout.GRAVITY_FILL);
+                //tabLayout6.setTabGravity(TabLayout.GRAVITY_FILL);
+                tabLayout6.post(tabLayout_config6);
 
                 final ViewPager pager6 = (ViewPager)findViewById(viewPager);
                 pager6.setAdapter(new MyPagerAdapter6(getSupportFragmentManager()));
@@ -293,13 +321,14 @@ public class TutorialsActivity extends AppCompatActivity {
                         onBackPressed();
                     }
                 });
-                TabLayout tabLayout7 = (TabLayout) findViewById(R.id.tab_layouttuts);
+                tabLayout7 = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout7.addTab(tabLayout7.newTab().setText("OOP"));
                 tabLayout7.addTab(tabLayout7.newTab().setText("Encapsulation"));
                 tabLayout7.addTab(tabLayout7.newTab().setText("Abstraction"));
                 tabLayout7.addTab(tabLayout7.newTab().setText("Inheritence"));
                 tabLayout7.addTab(tabLayout7.newTab().setText("Polymorphism"));
-                tabLayout7.setTabGravity(TabLayout.GRAVITY_FILL);
+                //tabLayout7.setTabGravity(TabLayout.GRAVITY_FILL);
+                tabLayout7.post(tabLayout_config7);
 
                 final ViewPager pager7 = (ViewPager)findViewById(viewPager);
                 pager7.setAdapter(new MyPagerAdapter7(getSupportFragmentManager()));
@@ -332,10 +361,11 @@ public class TutorialsActivity extends AppCompatActivity {
                         onBackPressed();
                     }
                 });
-                TabLayout tabLayout8 = (TabLayout) findViewById(R.id.tab_layouttuts);
+                tabLayout8 = (TabLayout) findViewById(R.id.tab_layouttuts);
                 tabLayout8.addTab(tabLayout8.newTab().setText("Classes in Python"));
                 tabLayout8.addTab(tabLayout8.newTab().setText("Objects in Python"));
-                tabLayout8.setTabGravity(TabLayout.GRAVITY_FILL);
+                //tabLayout8.setTabGravity(TabLayout.GRAVITY_FILL);
+                tabLayout8.post(tabLayout_config8);
 
                 final ViewPager pager8 = (ViewPager)findViewById(viewPager);
                 pager8.setAdapter(new MyPagerAdapter8(getSupportFragmentManager()));
@@ -361,8 +391,196 @@ public class TutorialsActivity extends AppCompatActivity {
         }
 
 
-
+        //End of onCreate Method
     }
+
+//********************************************************************************************************************
+//                 RUNABLES FOR TABLAYOUTS TUTORIALS ALL THE 8 TOPICS
+
+    Runnable tabLayout_config = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+    Runnable tabLayout_config1 = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout1.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout1.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout1.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout1.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout1.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+    Runnable tabLayout_config2 = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout2.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout2.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout2.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout2.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout2.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+    Runnable tabLayout_config3 = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout3.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout3.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout3.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout3.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout3.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+    Runnable tabLayout_config4 = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout4.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout4.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout4.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout4.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout4.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+    Runnable tabLayout_config5 = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout5.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout5.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout5.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout5.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout5.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+    Runnable tabLayout_config6 = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout6.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout6.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout6.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout6.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout6.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+    Runnable tabLayout_config7 = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout7.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout7.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout7.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout7.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout7.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+    Runnable tabLayout_config8 = new Runnable()
+    {
+        @Override
+        public void run()
+        {
+
+            if(tabLayout8.getWidth() < TutorialsActivity.this.getResources().getDisplayMetrics().widthPixels)
+            {
+                tabLayout8.setTabMode(TabLayout.MODE_FIXED);
+                ViewGroup.LayoutParams mParams = tabLayout8.getLayoutParams();
+                mParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                tabLayout8.setLayoutParams(mParams);
+
+            }
+            else
+            {
+                tabLayout8.setTabMode(TabLayout.MODE_SCROLLABLE);
+            }
+        }
+    };
+
+//*****************************************************************************************************************************
+// Pager Adapter for ViewPager to fill in Tutorials Content All 8 PagerAdapter for 8 topics
+
     private class MyPagerAdapter extends FragmentPagerAdapter
     {
         public MyPagerAdapter(FragmentManager fm) {
@@ -827,5 +1045,6 @@ public class TutorialsActivity extends AppCompatActivity {
             return 2;
         }
     }
-
+//*******************************************************************************************************************************************
+    //End of Tutorials Activity
 }

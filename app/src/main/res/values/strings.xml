@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Code In Python</string>
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="facebook_app_id">253278215124440</string>
     <!--
 ___________________________________________________________________________________________
  Placeholder String resource for activity_layouts in all articles activities

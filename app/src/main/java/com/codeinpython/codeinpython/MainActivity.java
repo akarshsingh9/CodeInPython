@@ -1,16 +1,16 @@
 package com.codeinpython.codeinpython;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.Drawer;
@@ -25,6 +25,10 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Firebase instance variables
+    private FirebaseAuth mFirebaseAuth;
+    private FirebaseUser mFirebaseUser;
+
     //RecyclerView recyclerView;
     //RecyclerView mRecyclerView;
 
@@ -35,10 +39,24 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
+        String mUsername,mPhotoUrl;
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        mFirebaseUser = mFirebaseAuth.getCurrentUser();
+        if (mFirebaseUser == null) {
+            // Not signed in, launch the Sign In activity
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        } else {
+            mUsername = mFirebaseUser.getDisplayName();
+            if (mFirebaseUser.getPhotoUrl() != null) {
+                mPhotoUrl = mFirebaseUser.getPhotoUrl().toString();
+            }
+        }
         Toolbar toolbarmain = (Toolbar) findViewById(R.id.toolbarmain);
         setSupportActionBar(toolbarmain);
+
+
 
         new DrawerBuilder().withActivity(this).build();
 
@@ -55,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 .withActivity(this)
                 .withHeaderBackground(R.drawable.navheader)
                 .addProfiles(
-                        new ProfileDrawerItem().withName("Mike Penz").withEmail("mikepenz@gmail.com").withIcon(getResources().getDrawable(R.drawable.userimage))
+                        new ProfileDrawerItem().withName(mUsername).withEmail("mikepenz@gmail.com").withIcon(getResources().getDrawable(R.drawable.userimage))
                 )
                 .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
                     @Override
@@ -92,17 +110,17 @@ public class MainActivity extends AppCompatActivity {
         ListViewMainAdapter adapter = new ListViewMainAdapter(this,listViewArrayList);
         int[] images = new int[]{R.drawable.tuts,R.drawable.codesection,R.drawable.pythonlogo,R.drawable.quizimage};
 
-        ListViewMainClass list = new ListViewMainClass("Tutorials",images[0],"Learn Python",Color.parseColor("#42A5F5"));
+        ListViewMainClass list = new ListViewMainClass("Tutorials",images[0],"Learn Python",Color.parseColor("#1d2538"));
         adapter.add(list);
-        list = new ListViewMainClass("Code Sample",images[1],"Review Python code" ,Color.parseColor("#7E57C2"));
+        list = new ListViewMainClass("Py Code",images[1],"Review Python code" ,Color.parseColor("#1d2538"));
         adapter.add(list);
-        list = new ListViewMainClass("Quiz",images[3],"Take Python Quiz" ,Color.parseColor("#7E57C2"));
+        list = new ListViewMainClass("Quiz",images[3],"Take Python Quiz" ,Color.parseColor("#1d2538"));
         adapter.add(list);
-        list = new ListViewMainClass("Certificate",images[0],"Earn Certificate",Color.parseColor("#42A5F5"));
+        list = new ListViewMainClass("Certificate",images[0],"Earn Certificate",Color.parseColor("#1d2538"));
         adapter.add(list);
-        list = new ListViewMainClass("Glossary",images[0],"Refer Glossary",Color.parseColor("#42A5F5"));
+        list = new ListViewMainClass("Glossary",images[0],"Refer Glossary",Color.parseColor("#1d2538"));
         adapter.add(list);
-        list = new ListViewMainClass("About Us",images[1],"Code In Python",Color.parseColor("#7E57C2"));
+        list = new ListViewMainClass("About Us",images[1],"Code In Python",Color.parseColor("#1d2538"));
         adapter.add(list);
         GridView listView = (GridView)findViewById(R.id.gridview);
         listView.setAdapter(adapter);
@@ -131,35 +149,14 @@ public class MainActivity extends AppCompatActivity {
                         intent3.putExtra("pos",position);
                         startActivity(intent3);
                         break;
+                    /*case 4:
+                        Intent intent4 = new Intent(MainActivity.this,.class);
+                        intent4.putExtra("pos",position);
+                        startActivity(intent4);
+                        break; */
                 }
             }
         });
-
-                //*****AppIntro code starts*****
-
-        SharedPreferences getPrefs = PreferenceManager
-                .getDefaultSharedPreferences(getBaseContext());
-
-        //  Create a new boolean and preference and set it to true
-        boolean isFirstStart = getPrefs.getBoolean("firstStart", true);
-
-       //  If the activity has never started before...
-        if (isFirstStart) {
-
-            //  Launch app intro
-            Intent i = new Intent(MainActivity.this, IntroActivity.class);
-            startActivity(i);
-
-            //  Make a new preferences editor
-            SharedPreferences.Editor e = getPrefs.edit();
-
-            //  Edit preference to make it false because we don't want this to run again
-            e.putBoolean("firstStart", false);
-
-            //  Apply changes
-            e.apply();
-        }
-     //*****AppIntro code ends*****
     }
 }
 

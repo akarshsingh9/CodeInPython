@@ -17,7 +17,7 @@ public class codingFragment extends Fragment {
         // Required empty public constructor
         super();
     }
-
+    //ImageButton back;
     public static codingFragment newInstance(String title, String code) {
 
         Bundle args = new Bundle();
@@ -37,6 +37,17 @@ public class codingFragment extends Fragment {
         title.setText(getArguments().getString("title"));
 
 
+        //Toolbar toolbar = (Toolbar)getActivity().findViewById(R.id.toolbarcoding);
+
+
+
+        /*WebView webView = (WebView)v.findViewById(R.id.webview);
+        WebSettings webSettings = webView.getSettings();
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        //webSettings.getSettings().setLoadsImagesAutomatically(true);
+        webView.loadUrl("https://gist.github.com/rduplain/2638913");
+*/
 
 
         TextView coding = (TextView)v.findViewById(R.id.coding);
@@ -45,5 +56,4 @@ public class codingFragment extends Fragment {
 
         return v;
     }
-
 }
