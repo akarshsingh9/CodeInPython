@@ -1,0 +1,219 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.codeinpython.codeinpython.AboutusFragment"
+    tools:ignore="ScrollViewSize">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/applogo"
+        android:contentDescription="@string/contentDescriptionImage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/applogo"
+        android:layout_marginTop="4dp"
+        android:id="@+id/apptitle"
+        android:layout_centerHorizontal="true"
+        android:text="Code in Python"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apptitle"
+        android:id="@+id/appversion"
+        android:layout_centerHorizontal="true"
+        android:text="v1.0"
+        tools:ignore="HardcodedText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/appversion"
+        android:background="#bdbdbd"
+        android:layout_marginTop="8dp"
+        android:id="@+id/horizontalline"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/aboutusinfo"
+       android:text="Glossary content"
+       android:paddingTop="10dp"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:layout_below="@id/horizontalline"
+
+       tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutdeveloper"
+        android:text="About Develeoper"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#009688"
+        android:layout_below="@id/aboutusinfo"
+
+        tools:ignore="HardcodedText" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutdeveloper"
+        android:id="@+id/developer"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="4dp"
+        ads:cardElevation="4dp"
+        tools:ignore="UnusedAttribute">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="10dp"
+               android:text="Akarsh Singh"
+               android:textColor="#000000"
+               android:id="@+id/akarsh"
+               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@id/akarsh"
+                android:layout_marginTop="5dp"
+                android:text="Android Developer"
+                android:id="@+id/des"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/twitter"
+                android:layout_below="@id/des"
+                android:id="@+id/twitter"
+                android:contentDescription="@string/contentDescriptionImage"
+                tools:ignore="RtlHardcoded" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/fb"
+                android:layout_below="@id/des"
+                android:id="@+id/fb"
+                android:contentDescription="@string/contentDescriptionImage"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/gplus"
+                android:layout_below="@id/des"
+                android:id="@+id/gplus"
+                android:contentDescription="@string/contentDescriptionImage"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/developer"
+        android:id="@+id/imagecredit"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="4dp"
+        ads:cardElevation="4dp"
+        tools:ignore="UnusedAttribute">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Kalinga Swain"
+                android:textColor="#000000"
+                android:id="@+id/kalinga"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@id/kalinga"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Image Credits"
+                android:id="@+id/des1"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fb"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/fb1"
+                android:contentDescription="@string/contentDescriptionImage"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kalinga"
+        android:text="Image Credits: Kalinga Swain"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_below="@id/developer"
+
+        />
+-->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imagecredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2683690631160044/1744548217">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+</ScrollView>

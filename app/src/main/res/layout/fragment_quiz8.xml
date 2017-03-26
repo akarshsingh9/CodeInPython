@@ -1,0 +1,85 @@
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="serif"
+        android:id="@+id/ques8"
+        android:text="@string/quiz8"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        tools:ignore="UnusedAttribute" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ques8"
+        android:id="@+id/rg8"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[2]"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[ 2, 'harry', 34.5 ]"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[ 2, 34.5 ]"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[ 34.5, 'harry', 2 ]"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            android:id="@+id/question8"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/rg8"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Submit"
+        android:id="@+id/submitans8"
+        tools:ignore="RtlHardcoded" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewques8"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2683690631160044/9479637814">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

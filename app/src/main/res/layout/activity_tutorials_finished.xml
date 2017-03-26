@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tutorials_finished"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    tools:context="com.codeinpython.codeinpython.TutorialsFinishedActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations !"
+        android:textColor="#EEEEEE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:id="@+id/congrats"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have completed"
+        android:textColor="#EEEEEE"
+        android:id="@+id/statement"
+        android:layout_below="@id/congrats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I/O in Python"
+        android:textColor="#EEEEEE"
+        android:layout_below="@id/statement"
+        android:id="@+id/topicname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        tools:ignore="HardcodedText" />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/contentDescriptionImage"
+        android:src="@drawable/completed"
+        android:layout_below="@id/topicname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Go Back"
+            android:textColor="#EEEEEE"
+            android:gravity="center"
+            android:padding="12dp"
+            android:id="@+id/goback"
+            android:background="#689f38"
+            tools:ignore="HardcodedText" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="serif"
+        android:id="@+id/ques10"
+        android:text="@string/quiz10"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+         />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ques10"
+        android:id="@+id/rg10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tuple"
+            android:id="@+id/question10"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="int"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="list"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="complex"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="12dp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/rg10"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Submit"
+        android:id="@+id/submitans10"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewques10"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2683690631160044/1956371011">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
