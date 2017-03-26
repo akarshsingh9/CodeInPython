@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
 
-
-        <ImageView
-            android:contentDescription="@string/contentDescriptionImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/banner"
-            android:adjustViewBounds="true"
-            android:id="@+id/bannerfrag4"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            tools:ignore="ScrollViewSize">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -42,7 +31,8 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:fontFamily="serif"
                 android:textSize="@dimen/article_text"
-                android:textColor="#FF3B3B3B"/>
+                android:textColor="#FF3B3B3B"
+                tools:ignore="UnusedAttribute" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -52,10 +42,10 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:fontFamily="monospace"
                 android:textSize="@dimen/article_text"
-                android:textColor="@android:color/black"
-                android:background="#b0bec5"
+                android:textColor="@android:color/white"
+                android:background="#28313d"
                 android:padding="8dp"
-                />
+                tools:ignore="UnusedAttribute" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -65,7 +55,8 @@
                 android:textColor="@android:color/black"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="serif"
-                android:textSize="@dimen/article_text"/>
+                android:textSize="@dimen/article_text"
+                tools:ignore="UnusedAttribute" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -78,7 +69,7 @@
                 android:textColor="@android:color/black"
                 android:background="#b0bec5"
                 android:padding="8dp"
-                />
+                tools:ignore="UnusedAttribute" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -89,19 +80,53 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:fontFamily="serif"
                 android:textSize="@dimen/article_text"
-                android:textColor="#FF3B3B3B"/>
+                android:textColor="#FF3B3B3B"
+                tools:ignore="UnusedAttribute" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="end|bottom"
+                android:id="@+id/slidenextfullfrag"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp"
+                tools:ignore="UseCompoundDrawables">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#0288d1"
+                    android:text="Slide to Next"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrowright"
+                    android:contentDescription="@string/contentDescriptionImage"
+                    />
+            </LinearLayout>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next"
-                android:layout_gravity="right"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:text="Click to Finish"
+                android:background="#039be5"
+                android:layout_gravity="end|bottom"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:id="@+id/nextpage4"
-                android:layout_marginTop="8dp"
-                />
+                android:layout_marginTop="18dp"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
-    </LinearLayout>
+
 </ScrollView>
 

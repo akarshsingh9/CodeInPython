@@ -1,13 +1,29 @@
 <resources>
     <string name="app_name">Code In Python</string>
-    <string name="google_status_fmt">Google User: %s</string>
-    <string name="firebase_status_fmt">Firebase User: %s</string>
-    <string name="facebook_app_id">253278215124440</string>
+    <!--
+___________________________________________________________________________________________
+ Quiz String
+     -->
+    <string name="quiz1">1. What is Python?</string>
+    <string name="quiz2">2. What programming paradigm does Python support?</string>
+    <string name="quiz3">3. What is the latest release of Python?</string>
+    <string name="quiz4">4. What is the output of print(str[2:5]) if str = \'Hello World!\' ?</string>
+    <string name="quiz5">5. Which of the following python function converts integer to Hexadecimal String ?</string>
+    <string name="quiz6">6. Which of the following function converts a string to all lowercase ?</string>
+    <string name="quiz7">7. Find Output: \n\u0009\u0009def sum(a,b): \n\u0009\u0009\u0009\u0009\u0009add = a + b \n\u0009\u0009\u0009\u0009\u0009return add \n\u0009\u0009print(sum(12,23))</string>
+    <string name="quiz8">8. Find Output:\n\u0009\u0009l = [ 2, \'harry\', 34.5 ] \n\u0009\u0009print(l[::-1])</string>
+    <string name="quiz9">9. What does this code do ? \n\u0009\u0009\u0009def func(b, c, d): \n\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009pass</string>
+    <string name="quiz10">10. Find type returned: \n\u0009\u0009\u0009 print(type((4,5))</string>
+    <string name="quiz11">11. Which of the following is a core feature of Object Oriented Programming in Python?</string>
+    <string name="quiz12">12. Which method is used to call constructor in python class ?</string>
+    <string name="quiz13">13. Which Python framework/s is used in Web Development?</string>
+    <string name="quiz14">14. Which of the following function changes case for all letters in a string?</string>
+    <string name="quiz15">15. Which of the following function insrts an object at a given index in a list?</string>
     <!--
 ___________________________________________________________________________________________
  Placeholder String resource for activity_layouts in all articles activities
      -->
-    <string name="contentDescriptionImage">top banner image of the app</string>
+    <string name="contentDescriptionImage">Code in Python Image</string>
     <string name="heading">PYTHON TUTORIALS</string>
     <string name="buttonTags">Tags</string>
     <string name="output">Output:</string>
@@ -53,52 +69,81 @@ The main advantage of using Python is it supports multiple programming paradigms
 6.	 Python interpreters are available for many operating systems allowing Python code to run on a wide variety of systems.
 </p>
 
-<b>Source:</b><br/>
-<font color="blue">Wikipedia</font><br/>
-<font color="blue">Python Software Foundation</font
-
     ]]></string>
 
     <string name="windowsInstall"><![CDATA[
-     <p>Here we will provide step by step guide on <b>how to install Python</b> on your PC. It is recommended to stick to the latest release of Python.
+     <p>Here we will provide step by step guide on
+     <b>how to install Python</b> on your PC. It is recommended
+     to stick to the latest release of Python.
     Installing python is very easy just stick to the guide.</p>
-    <h4>Installation on Windows</h4>
-    <p>Visit <font color="blue">https://www(dot)python(dot)org/downloads/windows/ </font>and download the latest release <b>Python 3.5.2</b></p>
-    <p>If you have 32-bit Windows PC then download <b>“Windows x86 executable installer”</b>.
-    If you are a 64-bit Windows user then download <b>“Windows x86-64 executable installer”</b>.</p>
-    <p>Double-click on <b>python-3.5.2.exe</b> to start the installation process.</p>
-    <p>If given a choice between <b>Install Now</b> and <b>Customize installation</b> then choose the latter option.</p>
-    <p>Check all the boxes if not already done, make sure you have all the necessary python files and packages.
-    Install it for all the users on your PC; even if you are not logged in as administrator then also you will be able to run python.</p>
-    <p>Click <b>‘Next’</b> to continue to the next step of installation.</p>
-    <p>You will enter into <b>Advanced Options</b> selection in this step.
-    It is recommended to keep the checkboxes as it is and choose your install location as <b>“C:\\Python35”</b>
-    so that all your important python files are safely installed in <b>C:</b> drive. Click <b>Install</b> button to start the installation.</p>
+    <h3>Installation on Windows</h3>
+    <p>Visit Python\'s official website and download the latest
+    release <b>Python 3.5.2</b></p>
+    <p>If you have 32-bit Windows PC then download
+    <b>"Windows x86 executable installer"</b>.
+    If you are a 64-bit Windows user then download
+    <b>"Windows x86-64 executable installer"</b>.</p>
+    <p>Double-click on <b>python-3.5.2.exe</b>
+    to start the installation process.</p>
+    <p>If given a choice between
+    <b>Install Now</b> and <b>Customize installation</b>
+    then choose the latter option.</p>
+    <p>Check all the boxes if not already done, make
+    sure you have all the necessary python files and packages.
+    Install it for all the users on your PC; even if you
+    are not logged in as administrator then also you will be
+    able to run python.</p>
+    <p>Click <b>\'Next\'</b> to continue to the next step
+    of installation.</p>
+    <p>You will enter into
+    <b>Advanced Options</b> selection in this step.
+    It is recommended to keep the checkboxes as it is
+    and choose your install location as <b>"C:\\Python35"</b>
+    so that all your important python files are safely installed in
+    <b>C:</b> drive. Click <b>Install</b> button to start the installation.</p>
     <p>Wait until the installation of Python 3.5.2 is complete.
-    Click <b>‘Close’</b> to exit from the installation wizard and you are good to go.</p>
-    <h6>You have successfully installed Python 3.5.2 on your Windows system.<h6>
+    Click <b>\'Close\'</b> to exit from the installation wizard and you are good to go.</p>
+    <h3>You have successfully installed Python 3.5.2 on your Windows system.</h3>
 
 
     ]]></string>
 
     <string name="macinstall"><![CDATA[
 
-    <p>Here we will provide step by step guide on <b>how to install Python</b> on your PC.
-    Here we will show you how to install Python 3.5.2 for Mac operating system. Follow the guide below.</p>
-    <p><b>NOTE:</b> Python comes installed along with <b>Mac OS X;</b> although you can make sure you have the latest version of
-    Python by installing the current build from the Python website.</p>
-    <p>Visit <font color="blue">https://www(dot)python(dot)org/downloads/mac-osx/ </font>and download the latest release <b>Python 3.5.2</b></p>
-    <p>Run installer package downloaded from the website and you will see a <b>Welcome</b> screen press <b>Continue</b> to begin the installation process.</p>
-    <p>After clicking continue, you will see <b>Important Information</b> which has information like system requirements for installing and
-    running Python in your Mac OS X. Read it carefully and press <b>Continue.</b></p>
-    <p>Then you will see the <b>Software License Agreement.</b> Read the agreement and then you need to press <b>Continue</b> to move forward with
+    <p>Here we will provide step by step
+    guide on <b>how to install Python</b> on your PC.
+    Here we will show you how to install
+    Python 3.5.2 for Mac operating system.
+    Follow the guide below.</p>
+    <p><b>NOTE:</b> Python comes installed
+    along with <b>Mac OS X;</b> although you
+    can make sure you have the latest version of
+    Python by installing the current build
+    from the Python website.</p>
+    <p>Visit Python\'s official site and download the latest
+    release <b>Python 3.5.2</b></p>
+    <p>Run installer package downloaded from the
+    website and you will see a <b>Welcome</b> screen press
+    <b>Continue</b> to begin the installation process.</p>
+    <p>After clicking continue, you will see <b>Important
+    Information</b> which has information like system
+    requirements for installing and
+    running Python in your Mac OS X. Read it carefully and
+    press <b>Continue.</b></p>
+    <p>Then you will see the <b>Software License Agreement.</b>
+    Read the agreement and then you need to press <b>Continue</b>
+    to move forward with
     the installation procedure.</p>
-    <p>Next step will ask for a destination to install your python software.
-    Select the destination for installation or leave the location as it is which is predefined for you and press <b>Continue.</b></p>
-    <p>Next step will ask for installation type, select the tools and frameworks you need in your system or leave it as it is and
+    <p>Next step will ask for a destination to install
+    your python software.
+    Select the destination for installation or leave the location
+    as it is which is predefined for you and press <b>Continue.</b></p>
+    <p>Next step will ask for installation type, select the tools
+    and frameworks you need in your system or leave it as it is and
     press <b>Install</b> to begin the installation.</p>
-    <p>After the installation is complete press <b>Continue</b> which loads the <b>Summary</b> page. Close the summary page.</p>
-    <h6>Python is now installed on your Mac OS X.</h6>
+    <p>After the installation is complete press <b>Continue</b> which
+    loads the <b>Summary</b> page. Close the summary page.</p>
+    <h4>Python is now installed on your Mac OS X.</h4>
 
 
     ]]></string>
@@ -110,18 +155,20 @@ The main advantage of using Python is it supports multiple programming paradigms
     We will provide you a list of text editors and IDE for both windows and Linux platform.<p>
     <p><b>NOTE:</b> Remember that all python files ar saved with a .py extension. You have to write the name of your file and then add .py in the end.
      For example: sum.py, user_input.py, etc.</p>
-    <h4>Windows:</h4>
-    Notepad++<br/>
-    Sublime Text<br/>
-    IDLE<br/>
-    PyCharm<br/>
-    <h4>Linux</h4>
-    Gedit<br/>
-    PyCharm<br/>
-    Spyder IDE<br/>
-    Sublime Text<br/>
+    <h3>Windows:</h3>
+    <ul>
+    <li>Notepad++</li>
+    <li>Sublime Text</li>
+    <li>IDLE</li>
+    <li>PyCharm</li>
+    <h3>Linux</h3>
+    <li>Gedit</li>
+    <li>PyCharm</li>
+    <li>Spyder IDE</li>
+    <li>Sublime Text</li><br/>
+    </ul>
     Using nano command in Terminal and save file in .py format
-    <h6>For our tutorial purpose, we will stick to IDLE as our primary python editor.</h6>
+    <h4>For our tutorial purpose, we will stick to IDLE as our primary python editor.</h4>
 
 
     ]]></string>
@@ -134,7 +181,7 @@ The main advantage of using Python is it supports multiple programming paradigms
         <h6>Save this new file as helloWorld.py</h6>
         <font color="#388e3c">File => Save as => Choose Desktop => Write helloWorld.py  => Click <b>\“Save\"</b></font>
         <p>Now in the text editor write the following code</p>]]></string>
-<string name="helloWorld2"><![CDATA[
+    <string name="helloWorld2"><![CDATA[
         <h6>To execute the above python program.</h6>
         <font color="#388e3c">Click ‘Run’ => Run Module</font>
         <p>The python code above displays the string within the quotes and parenthesis of the built-in print() function.
@@ -184,6 +231,211 @@ The main advantage of using Python is it supports multiple programming paradigms
       ]]>
     </string>
 
+    <string name="operator"><![CDATA[
+        <p>Operators are the constructs which can be used to manipulate the value of operands.
+        There are essentially 6 types of operators.
+        </p>
+        <h4>Types of Operator</h4>
+        <p>Python language supports the following types of operators.<br/>
+        <ul>
+        <li>Arithmetic Operators</li>
+        <li>Relational Operators</li>
+        <li>Assignment Operators</li>
+        <li>Logical Operators</li>
+        <li>Bitwise Operators</li>
+        <li>Membership Operators</li>
+        </ul>
+        </p>
+    ]]>
+    </string>
+
+    <string name="arthematic"><![CDATA[
+    <p>Following Operators come under arthematic operators: </p>
+    <h4>Operators</h4>
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Operator</th>
+        </tr>
+        <tr>
+           <td>+</td>
+           <td>&nbsp;&nbsp;&nbsp;Addition</td>
+        </tr>
+        <tr>
+           <td>-</td>
+           <td>&nbsp;&nbsp;&nbsp;Subtraction</td>
+        </tr>
+        <tr>
+           <td>*</td>
+           <td>&nbsp;&nbsp;&nbsp;Multiplication</td>
+        </tr>
+        <tr>
+           <td>/</td>
+           <td>&nbsp;&nbsp;&nbsp;Division</td>
+        </tr>
+        <tr>
+           <td>%</td>
+           <td>&nbsp;&nbsp;&nbsp;Modulus</td>
+        </tr>
+        <tr>
+           <td>**</td>
+           <td>&nbsp;&nbsp;&nbsp;Exponents</td>
+        </tr>
+        <tr>
+           <td>//</td>
+           <td>&nbsp;&nbsp;&nbsp;Floor Division</td>
+        </tr>
+    </table>
+    ]]></string>
+
+    <string name="relational"><![CDATA[
+    <p>These operators compare the values of operands on either sides and decide the relation among them.
+    They are also called Comparison operators</p>
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Operator</th>
+        </tr>
+        <tr>
+            <td> == </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equals</td>
+        </tr>
+        <tr>
+            <td> != </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not</td>
+        </tr>
+        <tr>
+            <td> > </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Greater than</td>
+        </tr>
+        <tr>
+            <td> < </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Less than</td>
+        </tr>
+        <tr>
+            <td> >= </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Greater than equal to</td>
+        </tr>
+        <tr>
+            <td> <= </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Less than equal to</td>
+        </tr>
+    </table>
+    ]]>
+    </string>
+
+    <string name="assignment"><![CDATA[
+    <p>The following come under assignment operators:-</p>
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Operator</th>
+        </tr>
+        <tr>
+            <td> = </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign</td>
+        </tr>
+        <tr>
+            <td> += </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add AND</td>
+        </tr>
+        <tr>
+            <td> -= </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtract AND</td>
+        </tr>
+        <tr>
+            <td> *= </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiply AND</td>
+        </tr>
+        <tr>
+            <td> /= </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divide AND</td>
+        </tr>
+        <tr>
+            <td> %= </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modulus AND</td>
+        </tr>
+        <tr>
+            <td> **= </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exponent AND</td>
+        </tr>
+        <tr>
+            <td> //= </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor Division AND</td>
+        </tr>
+    </table>
+    ]]>
+    </string>
+
+    <string name="bitwise"><![CDATA[
+        <p>
+            Bitwise operator works on bits and performs bit by bit operation. Hence numbers are
+            converted to binary equivalent and then bitwise operator operates over every bit of the number.
+        </p>
+        <h6>Example</h6>
+         <p>
+            a = 0011 1100<br/>
+            b = 0000 1101<br/>
+            -------------------------<br/>
+            a&b = 0000 1100 (Bitwise AND)<br/>
+            a|b = 0011 1101 (Bitwise OR)<br/>
+            a^b = 0011 0001 (Bitwise XOR)<br/>
+            ~a  = 1100 0011 (Bitwise NOT)<br/>
+            a<< = 1111 0000 (Bitwise Left Shift)<br/>
+            a>> = 0000 1111 (Bitwise Right Shift)<br/>
+
+        </p>]]>
+    </string>
+
+    <string name="logicaloperator"><![CDATA[
+        <p>
+            Logical operators are useful when applying conditions in our python program.
+            Logical operator helps to establish logical relationship between 2 operands.
+            The following are the logical operators supported by Python language:-
+        </p>
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Operator</th>
+            </tr>
+            <tr>
+                <td> and </td>
+                <td>Logical AND</td>
+            </tr>
+            <tr>
+                <td> or </td>
+                <td>Logical OR</td>
+            </tr>
+            <tr>
+                <td> not </td>
+                <td>Logical NOT</td>
+            </tr>
+    </table>
+    ]]>
+    </string>
+
+    <string name="membership"><![CDATA[
+        <p>
+            Python\'s membership operators test for membership in a sequence, such as strings, lists, or
+            tuples. There are two membership operators which are explained below:-
+        </p>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td>x in y, will give result 1 only if x is a member of sequence y.</td>
+            </tr>
+            <tr>
+                <td>not in</td>
+                <td>x not in y, will give result 1 only if x is not a member of sequence y.</td>
+            </tr>
+        </table>
+        ]]>
+    </string>
+
     <string name="variables"><![CDATA[
         <p>The concept of variables is same in any programming language.
         A <b>variable</b> is nothing but a memory location that is capable of storing some data or a specified value.
@@ -198,32 +450,35 @@ The main advantage of using Python is it supports multiple programming paradigms
     <p><b>Data types</b> article are the means to identify the types of data used in a programming language.
     With the help of data types, we can identify the type of data and then perform associated operations.
     Python has <b>five standard data types</b> to classify the type of data and perform operations on them.</p>
-    <p>The five standard data types are −<br/>
-    •	Numbers<br/>
-    •	String<br/>
-    •	List<br/>
-    •	Tuple<br/>
-    •	Dictionary</p>
-
+    <p>The five standard data types are :- <br/>
+      <ul>
+        <li>Numbers</li><br/>
+        <li>String</li><br/>
+        <li>List</li><br/>
+        <li>Tuple</li><br/>
+        <li>Dictionary</li></p>
+        </ul>
 
     ]]></string>
     <string name="numbers"><![CDATA[
         <p>In <b>Python</b>, everything is an object hence python has a separate <b>Numbers</b> class and all the integer and real numbers are objects in python.
         Python’s number data types store numeric values.
         Since the number is an object in python it is created once you <b>assign a value</b> to them. </p>
-        <p>Python supports the following different number types −<br/>
-        •	<b>int</b> (integers)<br/>
-        •	<b>float</b> (floating point value)<br/>
-        •	<b>complex</b> (complex numbers)</p>
-        <p>1)<b>Integers</b> are the numbers without any decimal values. They are either positive or negative integer values.</p><br/>
+        <p>Python supports the following different number types :− <br/>
+        <ul>
+        <li><b>int</b> (integers)</li><br/>
+        <li><b>float</b> (floating point value)</li><br/>
+        <li><b>complex</b> (complex numbers)</li></p>
+        </ul>
+        <p>1)&nbsp;<b>Integers</b> are the numbers without any decimal values. They are either positive or negative integer values.</p><br/>
         <font color="#00838f">Example: 23, -10, -100, 35, etc.</font>
-        <p>2)<b>Float or floating values</b> are the real numbers. They consist of decimal values and can be either positive or negative float values.</p><br/>
+        <p>2)&nbsp;<b>Float or floating values</b> are the real numbers. They consist of decimal values and can be either positive or negative float values.</p><br/>
         <font color="#00838f">Example: 10.5, 29.15, -19.7, -12.3, 12.3 + e18, etc.</font>
-        <p>3)<b>Complex</b> number consists of an ordered pair of real numbers in which both of them are of type float denoted by x + yj,
+        <p>3)&nbsp;<b>Complex</b> number consists of an ordered pair of real numbers in which both of them are of type float denoted by x + yj,
         where x and y are the real numbers and j is the imaginary unit.</p><br/>
         <font color="#00838f">Examples: 3+5j, 3.5j, 4e+21j</font>
 
-        <p>These are the number type that is supported by Python3. There is also some built-in function that python supports along with these numbers. Check out PyStore </p>
+        <p>These are the number type that is supported by Python3. There is also some built-in function that python supports along with these numbers. Check out Python official Docs. </p>
         ]]></string>
 
     <string name="strings"><![CDATA[
@@ -259,7 +514,7 @@ The main advantage of using Python is it supports multiple programming paradigms
         3)	<b>sort()</b> – this keyword is used to sort items in a list in ascending order.<br/>
         4)	<b>reverse()</b> – this keyword is used to reverse the order of items in the list.<br/>
         5)	<b>clear()</b> – this keyword is used to remove all items and empty the list.</p>
-        <h6>Get the complete list of built-in functions from our <b>PyStore.</b></h6>
+
         ]]>
     </string>
     <string name="dictionary"><![CDATA[
@@ -431,7 +686,7 @@ The main advantage of using Python is it supports multiple programming paradigms
         <p>
         <b>For example,</b><br/> An operator <b>\'+\'</b> can be used to add two numbers in python.
         But we are also allowed to concatenate two strings using <b>\'+\'</b> operator.
-        This is due to polymorphism that <b>‘+’</b> has an additional function to concatenate strings.
+        This is due to polymorphism that <b>\‘+\’</b> has an additional function to concatenate strings.
         </p>]]>
     </string>
 
@@ -465,7 +720,7 @@ The main advantage of using Python is it supports multiple programming paradigms
       ]]>
     </string>
 
-     <string name="Objects2"><![CDATA[
+    <string name="Objects2"><![CDATA[
         <p>
             You access the object\'s attributes or class members such as functions using the <b>dot operator</b> with the object.
             On other hand, class variable would be accessed using <i>ClassName</i> followed by a dot operator  −
@@ -492,9 +747,158 @@ The main advantage of using Python is it supports multiple programming paradigms
 
       ]]>
     </string>
+    <string name="try_tuts"><![CDATA[
+        <p>
+            Python has many built-in exceptions which forces your program to output an error when
+            something in it goes wrong.
+        </p>
+        <p>
+            Exceptions occur when user enters some invalid input. For example: If you are building
+            a calculator and user tries to divide a number by zero.<br/>
+            Instead of crashing your python application it is always best to handle that error yourself.
+            Exception handling helps to catch the exceptions and deal with them the way you want. You can
+            safely resume to your calculator by dislaying an error message in such situations.
+        </p>
+        <p>
+            A critical operation which can raise exception is placed inside the <b>try</b> clause and
+            the code that handles exception is written in <b>except</b> clause.
+            It is up to us, what operations we perform once we have caught the exception.
+            Here is a simple example.
+        </p>]]>
+    </string>
+    <string name="except">
+        <p>The portion that can cause exception is placed inside try block.
+            If no exception occurs, except block is skipped and normal flow continues.
+            But if any exception occurs, it is caught by the except block.
+        </p>
+        <p>
+            If you donot mention any exception with the except clause then it
+            will catch all exceptions and handle every case in the same way. This is
+            not a good programming practice. Instead we can specify which exceptions an except
+            clause will catch.
+        </p>
+        <p>A try clause can have any number of except clause to handle them
+            differently but only one will be executed in case an exception occurs. Here is a pseudo code</p>
+    </string>
+    <string name="tryfinally"><![CDATA[
+        <p>The try statement in Python can have an optional finally clause. This clause is executed no matter what,
+            and is generally used to release external resources.</p>
+        <p>For Example: If you are opening a file and performing file operations in python. You can place
+            your file operation code in try block and can close the file in finally block. This will
+        ensure that file is closed even when an exception has occurred.</p>
+        ]]>
+    </string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="glossary"><![CDATA[
+        <p>
+            <b>Algorithm:</b><br/> A general step by step process for solving a problem.<br/><br/>
+            <b>Bug:</b><br/> An error in a program.<br/><br/>
+            <b>Debugging:</b><br/> The process of finding and removing programming errors.<br/><br/>
+            <b>Runtime error:</b><br/> An error that occurs while execution of a program.<br/><br/>
+            <b>Semantics:</b><br/> The meaning of a program.<br/><br/>
+            <b>IDLE:</b><br/> Integrated development environment<br/><br/>
+            <b>Syntax:</b><br/> The structure of a program. Python has very light syntax compared to other languages.
+            Indentation plays an important role in syntax.<br/><br/>
+            <b>Comment:</b><br/> Information in a program that is meant for anyone reading the source code.
+            Comment has no effect on the execution of the program.
+            In Python, comments are written after <b>#</b>.<br/><br/>
+            <b>Block:</b><br/> Section of code which is grouped together.<br/><br/>
+            <b>Class:</b><br/> A template for creating user-defined objects.<br/><br/>
+            <b>Compiler:</b><br/> Translates a program written in a high-level language into a low-level language. <br/><br/>
+            <b>Interpret:</b> <br/> Execute a program by translating it one line at a time.<br/><br/>
+
+            <b>Conditional statement:</b><br/>
+            Statement that contains an "if" or "if/else".<br/><br/>
+
+            <b>def:</b><br/>
+            Defines a function or method<br/><br/>
+
+            <b>dictionary:</b><br/>
+            A mutable associative array (or dictionary) of key and value pairs.
+
+            Can contain mixed types (keys and values). Keys must be a hashable type.<br/><br/>
+
+            <b>Expression:</b><br/>
+            Python code that produces a value.<br/><br/>
+
+            <b>Garbage collection:</b><br/>
+            The process of freeing memory when it is not used anymore.<br/><br/>
+
+            <b>if statement:</b><br/>
+            Conditionally executes a block of code, along with else and elif<br/><br/>
+
+            <b>import:</b><br/>
+            Used to import modules whose functions or variables can be used in the current
+            program.<br/><br/>
+
+            <b>Indentation:</b><br/>
+            Python uses white-space indentation, rather than curly braces or keywords,
+            to delimit blocks.<br/><br/>
+
+            <b>Module:</b><br/>
+            The basic unit of code reusability in Python. A block of code imported by some
+            other code.<br/><br/>
+
+            <b>Object:</b><br/>
+            Any data with state (attributes or value) and defined behavior (methods).<br/><br/>
+
+            <b>pass:</b><br/>
+            used while creating an empty code block<br/><br/>
+
+            <b>try:</b><br/>
+            Allows exceptions raised in its attached code block to be caught and handled by
+            except clauses.<br/><br/>
+
+            <b>while:</b><br/>
+            Executes a block of code as long as its condition is true.<br/><br/>
+
+            <b>parse:</b><br/>
+            To examine a program and analyze the syntactic structure.<br/><br/>
+
+        </p>
+        ]]>
+    </string>
+
+    <string name="aboustus"><![CDATA[
+    <p>
+       <b><font color=" #009688">About App</font> </b><br/><br/>
+       Code in Python app focuses to teach concepts of programming in Python. This app is
+       ideal for those who are new to programming or have an inclination to learn Python.
+       Free tutorials, quiz, code references and glossary is provided to aid your learning
+       experience.
+    </p>]]>
+</string>
+
+    <string name="applications"><![CDATA[
+        <p>
+            Python has many applications and is used by all the major tech companies. 
+            Here are some applications of python:</p>
+            <h4>Web and Internet Development</h4>
+        <p>
+            Python offers many choices for web development:<br/>
+            •	Frameworks such as Django and Pyramid.<br/>
+            •	Micro-frameworks such as Flask and Bottle.<br/>
+            •	Advanced content management systems such as Plone and django CMS.<br/>
+         </p>   
+           <h4>Scientific and Numeric</h4>
+        <p>
+            Python is widely used in scientific and numeric computing:<br/>
+            •	SciPy is a collection of packages for mathematics, science, and engineering.<br/>
+            •	Pandas is a data analysis and modeling library.<br/>
+        </p>    
+         <h4>Desktop GUIs</h4>
+          <p>
+            The Tk GUI library(Tkinter) is included with all distributions of Python.
+            These are some more toolkits that can be used separately:<br/>
+            •	wxWidgets<br/>
+            •	Kivy, for writing multitouch applications.<br/>
+            •	Qt via pyqt or pyside<br/>
+
+
+        </p>
+        ]]>
+    </string>
+
     <string name="title_activity_code_sample">codeSampleActivity</string>
 
     <!--

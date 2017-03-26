@@ -35,22 +35,45 @@ public class codeSampleFragment extends Fragment {
         codeSampleTopics.setLayoutManager(codeLLayout);
 
         ArrayList<codeSampleClass> topicList = new ArrayList<>();
-        int[] images = new int[]{R.drawable.pyth,R.drawable.pythonlog,R.drawable.pythonlogo,R.drawable.updates};
+        int[] images = new int[]{R.drawable.pycode};
 
-        codeSampleClass codeTopic = new codeSampleClass(images[0],"print()");
+        codeSampleClass codeTopic = new codeSampleClass(images[0],"Hello World");
         topicList.add(codeTopic);
 
-        codeTopic = new codeSampleClass(images[0],"if else");
+        codeTopic = new codeSampleClass(images[0],"input()");
         topicList.add(codeTopic);
 
-        codeTopic = new codeSampleClass(images[0],"for loop");
+        codeTopic = new codeSampleClass(images[0],"Display String");
         topicList.add(codeTopic);
 
-        codeTopic = new codeSampleClass(images[0],"while loop");
+        codeTopic = new codeSampleClass(images[0],"Raw String");
+        topicList.add(codeTopic);
+
+        codeTopic = new codeSampleClass(images[0],"String Concatenate");
+        topicList.add(codeTopic);
+
+        codeTopic = new codeSampleClass(images[0],"String Manipulation");
+        topicList.add(codeTopic);
+
+        codeTopic = new codeSampleClass(images[0],"Lists");
+        topicList.add(codeTopic);
+
+        codeTopic = new codeSampleClass(images[0],"Voting age Problem");
+        topicList.add(codeTopic);
+
+        codeTopic = new codeSampleClass(images[0],"Simple for loop");
+        topicList.add(codeTopic);
+
+        codeTopic = new codeSampleClass(images[0],"Simple while loop");
+        topicList.add(codeTopic);
+
+        codeTopic = new codeSampleClass(images[0],"Class in Python");
         topicList.add(codeTopic);
 
         codeSampleAdapter adapter = new codeSampleAdapter(getActivity(),topicList);
         codeSampleTopics.setAdapter(adapter);
+
+
 
         return v;
     }

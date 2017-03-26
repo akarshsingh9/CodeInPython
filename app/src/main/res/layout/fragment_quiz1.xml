@@ -1,8 +1,8 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context="com.codeinpython.codeinpython.quiz1Fragment">
 
     <TextView
@@ -11,12 +11,16 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:text="1. What is Python?"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/ques1"
+        android:text="@string/quiz1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
         />
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/ques1"
+        android:id="@+id/rg1"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="20dp">
@@ -27,36 +31,53 @@
             android:text="Programming Lanuage"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:paddingLeft="12dp"
-            android:id="@+id/question1"/>
+            android:id="@+id/question1"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Assembly Lanuage"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:paddingLeft="12dp"/>
+            android:paddingLeft="12dp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
         <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="English Lanuage"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:paddingLeft="12dp"/>
+        android:paddingLeft="12dp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
         <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="None of the Above"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:paddingLeft="12dp"/>
+        android:paddingLeft="12dp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_gravity="right"
+        android:layout_below="@id/rg1"
+        android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
         android:text="Submit"
-        android:id="@+id/submitans1"/>
-</LinearLayout>
+        android:id="@+id/submitans1"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewques1"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2683690631160044/5424541416">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

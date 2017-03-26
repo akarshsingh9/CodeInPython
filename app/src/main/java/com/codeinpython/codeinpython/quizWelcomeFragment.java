@@ -34,7 +34,36 @@ public class quizWelcomeFragment extends Fragment {
                 startActivity(i);
             }
         });
+
+
+     /*   String android_id = Settings.Secure.getString(getContext().getContentResolver(), Settings.Secure.ANDROID_ID);
+        String deviceId = md5(android_id).toUpperCase();
+        Log.i("device id=",deviceId);
+        AdView adView = (AdView)v.findViewById(R.id.adViewquizwelcome);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(deviceId)
+                .build();
+        adView.loadAd(adRequest);
+*/
         return v;
     }
+  /*  public String md5(String s) {
+        try {
+            // Create MD5 Hash
+            MessageDigest digest = java.security.MessageDigest.getInstance("MD5");
+            digest.update(s.getBytes());
+            byte messageDigest[] = digest.digest();
 
+            // Create Hex String
+            StringBuffer hexString = new StringBuffer();
+            for (int i=0; i<messageDigest.length; i++)
+                hexString.append(Integer.toHexString(0xFF & messageDigest[i]));
+            return hexString.toString();
+
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+    */
 }

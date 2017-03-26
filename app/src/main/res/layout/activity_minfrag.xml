@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-
-
-
-        <ImageView
-            android:contentDescription="@string/contentDescriptionImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/banner"
-            android:adjustViewBounds="true"
-            android:id="@+id/bannerfrag1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:paddingBottom="28dp"
+            tools:ignore="ScrollViewSize">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,7 +22,14 @@
                 android:text="@string/heading"
                 android:id="@+id/headingfrag1"/>
 
-            <TextView
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/articlefrag1"
+                android:background="#EEEEEE"
+                android:layout_marginTop="16dp"
+                />
+            <!--<TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/articlefrag1"
@@ -42,17 +39,49 @@
                 android:fontFamily="serif"
                 android:textSize="@dimen/article_text"
                 android:textColor="#FF3B3B3B"/>
+-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end|bottom"
+                android:id="@+id/slidenext"
+                android:visibility="visible"
+                tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="#0288d1"
+                android:text="Slide to Next"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                tools:ignore="HardcodedText,RtlHardcoded" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+                android:contentDescription="@string/contentDescriptionImage"
+                />
+            </LinearLayout>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:text="Click to Finish"
+                android:textAllCaps="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:background="#039be5"
                 android:id="@+id/nextpage1"
-                android:layout_marginTop="8dp"
-                android:layout_gravity="right"
-                />
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="end|bottom"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
-    </LinearLayout>
+
 </ScrollView>

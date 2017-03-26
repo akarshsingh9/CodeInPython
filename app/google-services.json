@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "380675155408",
-    "firebase_url": "https://codeinpython-login.firebaseio.com",
-    "project_id": "codeinpython-login",
-    "storage_bucket": "codeinpython-login.appspot.com"
+    "project_number": "911225380853",
+    "firebase_url": "https://code-in-python.firebaseio.com",
+    "project_id": "code-in-python",
+    "storage_bucket": "code-in-python.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:380675155408:android:36923c262cc1219e",
+        "mobilesdk_app_id": "1:911225380853:android:36923c262cc1219e",
         "android_client_info": {
           "package_name": "com.codeinpython.codeinpython"
         }
       },
       "oauth_client": [
         {
-          "client_id": "380675155408-sk60lnu93ptlj4dcpfknbqpdf6het3d7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.codeinpython.codeinpython",
-            "certificate_hash": "294DF268D766639664170D6CABC6915A2F34DF5E"
-          }
-        },
-        {
-          "client_id": "380675155408-kcd6qc174hoo6a7qbqp22u3466an21tg.apps.googleusercontent.com",
+          "client_id": "911225380853-cnegk69dj35g86gr3v0j4p6vt28j70jt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC98ZOn-_gbBLu13nZ2X1_X5wKyB81IcC8"
+          "current_key": "AIzaSyCi94kuFl1Z3zd3GCVQollWOn9ikrZ76Ek"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "380675155408-kcd6qc174hoo6a7qbqp22u3466an21tg.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

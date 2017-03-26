@@ -1,6 +1,7 @@
 package com.codeinpython.codeinpython;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
@@ -34,7 +35,7 @@ public class TopicMenuAdapter extends RecyclerView.Adapter<TopicMenuAdapter.View
             fourth = (TextView)view.findViewById(R.id.fourthitem);
             five = (TextView)view.findViewById(R.id.fiveitem);
             sixth = (TextView)view.findViewById(R.id.sixitem);
-            cardView = (CardView)view.findViewById(R.id.topicsCardView);
+            cardView = (CardView) view.findViewById(R.id.topicsCardView);
         }
     }
 
@@ -51,6 +52,7 @@ public class TopicMenuAdapter extends RecyclerView.Adapter<TopicMenuAdapter.View
         return new ViewHolder(itemView);
     }
 
+    @SuppressLint("RecyclerView")
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
         TopicFullCardClass topicFullCardClass = topicFullCardClassList.get(position);
@@ -111,6 +113,16 @@ public class TopicMenuAdapter extends RecyclerView.Adapter<TopicMenuAdapter.View
                         Intent intent8 = new Intent(v.getContext(),TutorialsActivity.class);
                         intent8.putExtra("positions",position);
                         v.getContext().startActivity(intent8);
+                        break;
+                    case 9:
+                        Intent intent9 = new Intent(v.getContext(),TutorialsActivity.class);
+                        intent9.putExtra("positions",position);
+                        v.getContext().startActivity(intent9);
+                        break;
+                    case 10:
+                        Intent intent10 = new Intent(v.getContext(),TutorialsActivity.class);
+                        intent10.putExtra("positions",position);
+                        v.getContext().startActivity(intent10);
                         break;
 
                 }

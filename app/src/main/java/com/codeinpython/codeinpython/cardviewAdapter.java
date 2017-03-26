@@ -1,6 +1,7 @@
 package com.codeinpython.codeinpython;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
@@ -42,6 +43,7 @@ public class cardviewAdapter extends RecyclerView.Adapter<cardviewAdapter.MyView
         return new MyViewHolder(itemView);
     }
 
+    @SuppressLint("RecyclerView")
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         cardviewclass cardviewclass = cardviewclassList.get(position);

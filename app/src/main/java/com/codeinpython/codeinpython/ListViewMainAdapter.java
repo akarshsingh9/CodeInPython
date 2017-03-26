@@ -23,7 +23,7 @@ public class ListViewMainAdapter extends ArrayAdapter<ListViewMainClass> {
 
     @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
         ListViewMainClass currentListViewMainClass = getItem(position);
         View view = convertView;
@@ -34,6 +34,7 @@ public class ListViewMainAdapter extends ArrayAdapter<ListViewMainClass> {
         }
 
         TextView titleTextView = (TextView)view.findViewById(R.id.titleTextView);
+        assert currentListViewMainClass != null;
         titleTextView.setText(currentListViewMainClass.getTitle());
 
         ImageView icon = (ImageView)view.findViewById(R.id.titleicon);

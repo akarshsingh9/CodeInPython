@@ -16,7 +16,8 @@
         android:elevation="6dp"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="UnusedAttribute" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -24,6 +25,17 @@
         android:id="@+id/placeholderFragment"
         android:layout_below="@id/toolbartopics"/>
 
+  <!--  <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewmain"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-2683690631160044/5424541416">
+    </com.google.android.gms.ads.AdView>
+-->
     <!--<fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"

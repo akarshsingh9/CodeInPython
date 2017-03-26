@@ -9,25 +9,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.mikepenz.materialdrawer.AccountHeader;
-import com.mikepenz.materialdrawer.AccountHeaderBuilder;
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.model.DividerDrawerItem;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.IProfile;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     // Firebase instance variables
-    private FirebaseAuth mFirebaseAuth;
-    private FirebaseUser mFirebaseUser;
+    //private FirebaseAuth mFirebaseAuth;
+    //private FirebaseUser mFirebaseUser;
 
     //RecyclerView recyclerView;
     //RecyclerView mRecyclerView;
@@ -39,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String mUsername,mPhotoUrl;
+        /*String mUsername,mEmail;
         mFirebaseAuth = FirebaseAuth.getInstance();
         mFirebaseUser = mFirebaseAuth.getCurrentUser();
         if (mFirebaseUser == null) {
@@ -49,78 +37,29 @@ public class MainActivity extends AppCompatActivity {
             return;
         } else {
             mUsername = mFirebaseUser.getDisplayName();
-            if (mFirebaseUser.getPhotoUrl() != null) {
-                mPhotoUrl = mFirebaseUser.getPhotoUrl().toString();
-            }
-        }
+            mEmail = mFirebaseUser.getEmail();
+        }*/
         Toolbar toolbarmain = (Toolbar) findViewById(R.id.toolbarmain);
         setSupportActionBar(toolbarmain);
-
-
-
-        new DrawerBuilder().withActivity(this).build();
-
-        //if you want to update the items at a later time it is recommended to keep it in a variable
-        PrimaryDrawerItem items1 = new PrimaryDrawerItem().withIdentifier(1).withName("Home").withIcon(R.drawable.home);
-        PrimaryDrawerItem items2 = new PrimaryDrawerItem().withIdentifier(2).withName("Favorites").withIcon(R.drawable.favorite);
-        PrimaryDrawerItem items3 = new PrimaryDrawerItem().withIdentifier(3).withName("Tutorials").withIcon(R.drawable.home);
-        PrimaryDrawerItem items4 = new PrimaryDrawerItem().withIdentifier(4).withName("Code Samples").withIcon(R.drawable.home);
-        SecondaryDrawerItem items5 = new SecondaryDrawerItem().withIdentifier(5).withName("Settings").withIcon(R.drawable.settings);
-        SecondaryDrawerItem items6 = new SecondaryDrawerItem().withIdentifier(6).withName("Rate us").withIcon(R.drawable.star);
-
-        // Create the AccountHeader
-        AccountHeader headerResult1 = new AccountHeaderBuilder()
-                .withActivity(this)
-                .withHeaderBackground(R.drawable.navheader)
-                .addProfiles(
-                        new ProfileDrawerItem().withName(mUsername).withEmail("mikepenz@gmail.com").withIcon(getResources().getDrawable(R.drawable.userimage))
-                )
-                .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
-                    @Override
-                    public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
-                        return false;
-                    }
-                })
-                .build();
-
-
-//create the drawer and remember the `Drawer` result object
-        Drawer result = new DrawerBuilder()
-                .withActivity(this)
-                .withAccountHeader(headerResult1)
-                .withToolbar(toolbarmain)
-                .addDrawerItems(
-                        items1,items2,items3,items4,
-                        new DividerDrawerItem(),
-                        items5,items6
-                )
-                /*.withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
-                    @Override
-                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        // do something with the clicked item :D
-                        switch()
-                    }
-                })*/
-                .build();
 
 
 
 
         ArrayList<ListViewMainClass> listViewArrayList = new ArrayList<>();
         ListViewMainAdapter adapter = new ListViewMainAdapter(this,listViewArrayList);
-        int[] images = new int[]{R.drawable.tuts,R.drawable.codesection,R.drawable.pythonlogo,R.drawable.quizimage};
+        int[] images = new int[]{R.drawable.tutorial,R.drawable.code,R.drawable.future,R.drawable.quiz,R.drawable.glossary,R.drawable.aboutus};
 
-        ListViewMainClass list = new ListViewMainClass("Tutorials",images[0],"Learn Python",Color.parseColor("#1d2538"));
+        ListViewMainClass list = new ListViewMainClass("Tutorials",images[0],"Learn Python",Color.parseColor("#424242"));
         adapter.add(list);
-        list = new ListViewMainClass("Py Code",images[1],"Review Python code" ,Color.parseColor("#1d2538"));
+        list = new ListViewMainClass("Py Code",images[1],"Review Python code" ,Color.parseColor("#455A64"));
         adapter.add(list);
-        list = new ListViewMainClass("Quiz",images[3],"Take Python Quiz" ,Color.parseColor("#1d2538"));
+        list = new ListViewMainClass("Quiz",images[3],"Take Python Quiz" ,Color.parseColor("#455A64"));
         adapter.add(list);
-        list = new ListViewMainClass("Certificate",images[0],"Earn Certificate",Color.parseColor("#1d2538"));
+        list = new ListViewMainClass("Glossary",images[4],"Refer Glossary",Color.parseColor("#424242"));
         adapter.add(list);
-        list = new ListViewMainClass("Glossary",images[0],"Refer Glossary",Color.parseColor("#1d2538"));
+        list = new ListViewMainClass("About Us",images[5],"Code In Python",Color.parseColor("#424242"));
         adapter.add(list);
-        list = new ListViewMainClass("About Us",images[1],"Code In Python",Color.parseColor("#1d2538"));
+        list = new ListViewMainClass("Future",images[2],"What Next?",Color.parseColor("#455A64"));
         adapter.add(list);
         GridView listView = (GridView)findViewById(R.id.gridview);
         listView.setAdapter(adapter);
@@ -149,14 +88,26 @@ public class MainActivity extends AppCompatActivity {
                         intent3.putExtra("pos",position);
                         startActivity(intent3);
                         break;
-                    /*case 4:
-                        Intent intent4 = new Intent(MainActivity.this,.class);
+                    case 4:
+                        Intent intent4 = new Intent(MainActivity.this,TopicMenuActivity.class);
                         intent4.putExtra("pos",position);
                         startActivity(intent4);
-                        break; */
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(MainActivity.this,TopicMenuActivity.class);
+                        intent5.putExtra("pos",position);
+                        startActivity(intent5);
+                        break;
+
                 }
             }
         });
+    }
+
+    public void onBackPressed() {
+        //  super.onBackPressed();
+        moveTaskToBack(true);
+
     }
 }
 

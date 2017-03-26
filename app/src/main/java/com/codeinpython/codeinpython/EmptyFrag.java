@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 
 public class EmptyFrag extends Fragment {
@@ -27,9 +26,7 @@ public class EmptyFrag extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.emptyfrag,container,false);
-        TextView empty = (TextView)v.findViewById(R.id.emptyText);
-        empty.setText(getArguments().getString("message"));
-        return v;
+
+        return inflater.inflate(R.layout.emptyfrag,container,false);
     }
 }

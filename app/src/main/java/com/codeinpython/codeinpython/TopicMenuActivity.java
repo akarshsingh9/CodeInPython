@@ -1,76 +1,37 @@
 package com.codeinpython.codeinpython;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.mikepenz.materialdrawer.AccountHeader;
-import com.mikepenz.materialdrawer.AccountHeaderBuilder;
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.model.DividerDrawerItem;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.IProfile;
-
 public class TopicMenuActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topic_menu);
 
         Toolbar toolbar21 = (Toolbar) findViewById(R.id.toolbartopics);
         setSupportActionBar(toolbar21);
-        new DrawerBuilder().withActivity(this).build();
+        toolbar21.setNavigationIcon(R.drawable.backbutton);
+        toolbar21.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        //if you want to update the items at a later time it is recommended to keep it in a variable
-        PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Home").withIcon(R.drawable.home);
-        PrimaryDrawerItem item2 = new PrimaryDrawerItem().withIdentifier(2).withName("Favorites").withIcon(R.drawable.favorite);
-        PrimaryDrawerItem item3 = new PrimaryDrawerItem().withIdentifier(3).withName("Tutorials").withIcon(R.drawable.home);
-        PrimaryDrawerItem item4 = new PrimaryDrawerItem().withIdentifier(4).withName("Code Samples").withIcon(R.drawable.home);
-        SecondaryDrawerItem item5 = new SecondaryDrawerItem().withIdentifier(5).withName("Settings").withIcon(R.drawable.settings);
-        SecondaryDrawerItem item6 = new SecondaryDrawerItem().withIdentifier(6).withName("Rate us").withIcon(R.drawable.star);
+                int back = getIntent().getExtras().getInt("back");
+                if(back == 1)
+                {
+                    Intent intentback = new Intent(TopicMenuActivity.this,MainActivity.class);
+                    startActivity(intentback);
+                }
 
-        // Create the AccountHeader
-        AccountHeader headerResult = new AccountHeaderBuilder()
-                .withActivity(this)
-                .withHeaderBackground(R.drawable.navheader)
-                .addProfiles(
-                        new ProfileDrawerItem().withName("Mike Penz").withEmail("mikepenz@gmail.com").withIcon(getResources().getDrawable(R.drawable.userimage))
-                )
-                .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
-                    @Override
-                    public boolean onProfileChanged(View view, IProfile profile, boolean currentProfile) {
-                        return false;
-                    }
-                })
-                .build();
+                onBackPressed();
 
-
-//create the drawer and remember the `Drawer` result object
-        Drawer result = new DrawerBuilder()
-                .withActivity(this)
-                .withAccountHeader(headerResult)
-                .withToolbar(toolbar21)
-                .addDrawerItems(
-                        item1,item2,item3,item4,
-                        new DividerDrawerItem(),
-                        item5,item6
-                )
-                /*.withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
-                    @Override
-                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
-                        // do something with the clicked item :D
-                        switch()
-                    }
-                })*/
-                .build();
-
-
+            }
+        });
 
 
 
@@ -78,6 +39,8 @@ public class TopicMenuActivity extends AppCompatActivity {
 
         switch (pos) {
             case 0:
+                //noinspection ConstantConditions
+                getSupportActionBar().setTitle("Tutorials");
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 TopicfullFragment topicfullFragment = new TopicfullFragment();
                 fragmentTransaction.replace(R.id.placeholderFragment, topicfullFragment);
@@ -86,6 +49,8 @@ public class TopicMenuActivity extends AppCompatActivity {
 
                 break;
             case 1:
+                //noinspection ConstantConditions
+                getSupportActionBar().setTitle("PY Code");
                 FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
                 codeSampleFragment codeSampleFragment = new codeSampleFragment();
                 //EmptyFrag emptyFrag = EmptyFrag.newInstance("Working on Code Sample Section");
@@ -93,6 +58,8 @@ public class TopicMenuActivity extends AppCompatActivity {
                 fragmentTransaction1.commit();
                 break;
             case 2:
+                //noinspection ConstantConditions
+                getSupportActionBar().setTitle("Quiz");
                 FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
                 //EmptyFrag emptyFrag1 = EmptyFrag.newInstance("Working on Quiz Section");
                 quizWelcomeFragment quizWelcomeFragment = new quizWelcomeFragment();
@@ -100,13 +67,36 @@ public class TopicMenuActivity extends AppCompatActivity {
                 fragmentTransaction2.commit();
                 break;
             case 3:
+                //noinspection ConstantConditions
+                getSupportActionBar().setTitle("Glossary");
                 FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
-                EmptyFrag emptyFrag2 = EmptyFrag.newInstance("Working on Certificate Section");
-                fragmentTransaction3.replace(R.id.placeholderFragment, emptyFrag2);
+                //EmptyFrag emptyFrag2 = EmptyFrag.newInstance("Working on Certificate Section");
+                //fragmentTransaction3.replace(R.id.placeholderFragment, emptyFrag2);
+                GlossaryFragment glossaryFragment = new GlossaryFragment();
+                fragmentTransaction3.replace(R.id.placeholderFragment,glossaryFragment);
                 fragmentTransaction3.commit();
+                break;
+            case 4:
+                getSupportActionBar().setTitle("About Us");
+                FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
+                AboutusFragment aboutusFragment = new AboutusFragment();
+                fragmentTransaction4.replace(R.id.placeholderFragment,aboutusFragment);
+                fragmentTransaction4.commit();
+                break;
+            case 5:
+                getSupportActionBar().setTitle("Future");
+                FragmentTransaction fragmentTransaction5 = getSupportFragmentManager().beginTransaction();
+                FutureFragment futureFragment = new FutureFragment();
+                fragmentTransaction5.replace(R.id.placeholderFragment,futureFragment);
+                fragmentTransaction5.commit();
                 break;
         }
     }
 
 
+
+/* intent to activity to display the tuts finished from -> button buuton to come back to menu
+        intent back to here pass args called pos with int value so switch case catches it
+
+*/
 }

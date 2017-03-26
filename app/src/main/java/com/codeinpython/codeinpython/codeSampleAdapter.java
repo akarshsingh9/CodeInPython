@@ -1,6 +1,7 @@
 package com.codeinpython.codeinpython;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
@@ -16,7 +17,6 @@ import java.util.List;
 public class codeSampleAdapter extends RecyclerView.Adapter<codeSampleAdapter.codeSampleViewHolder>{
 
     private List<codeSampleClass>codeSampleClassList;
-    private Context mContext;
 
     public class codeSampleViewHolder extends RecyclerView.ViewHolder
     {
@@ -35,7 +35,7 @@ public class codeSampleAdapter extends RecyclerView.Adapter<codeSampleAdapter.co
 
     public codeSampleAdapter(Context context, List<codeSampleClass> codeTopicList)
     {
-        this.mContext = context;
+        Context mContext = context;
         this.codeSampleClassList = codeTopicList;
     }
 
@@ -46,6 +46,7 @@ public class codeSampleAdapter extends RecyclerView.Adapter<codeSampleAdapter.co
         return new codeSampleViewHolder(itemList);
     }
 
+    @SuppressLint("RecyclerView")
     @Override
     public void onBindViewHolder(codeSampleViewHolder holder, final int position) {
         codeSampleClass sampleClass = codeSampleClassList.get(position);
@@ -57,27 +58,62 @@ public class codeSampleAdapter extends RecyclerView.Adapter<codeSampleAdapter.co
                 switch (position)
                 {
                     case 0:
+                        Intent intent = new Intent(v.getContext(),codeSampleActivity.class);
+                        intent.putExtra("codePosition",position);
+                        v.getContext().startActivity(intent);
+                        break;
+
+                    case 1:
                         Intent intent1 = new Intent(v.getContext(),codeSampleActivity.class);
                         intent1.putExtra("codePosition",position);
                         v.getContext().startActivity(intent1);
                         break;
 
-                    case 1:
+                    case 2:
                         Intent intent2 = new Intent(v.getContext(),codeSampleActivity.class);
                         intent2.putExtra("codePosition",position);
                         v.getContext().startActivity(intent2);
                         break;
 
-                    case 2:
+                    case 3:
                         Intent intent3 = new Intent(v.getContext(),codeSampleActivity.class);
                         intent3.putExtra("codePosition",position);
                         v.getContext().startActivity(intent3);
                         break;
-
-                    case 3:
+                    case 4:
                         Intent intent4 = new Intent(v.getContext(),codeSampleActivity.class);
                         intent4.putExtra("codePosition",position);
                         v.getContext().startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(v.getContext(),codeSampleActivity.class);
+                        intent5.putExtra("codePosition",position);
+                        v.getContext().startActivity(intent5);
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(v.getContext(),codeSampleActivity.class);
+                        intent6.putExtra("codePosition",position);
+                        v.getContext().startActivity(intent6);
+                        break;
+                    case 7:
+                        Intent intent7 = new Intent(v.getContext(),codeSampleActivity.class);
+                        intent7.putExtra("codePosition",position);
+                        v.getContext().startActivity(intent7);
+                        break;
+                    case 8:
+                        Intent intent8 = new Intent(v.getContext(),codeSampleActivity.class);
+                        intent8.putExtra("codePosition",position);
+                        v.getContext().startActivity(intent8);
+                        break;
+                    case 9:
+                        Intent intent9 = new Intent(v.getContext(),codeSampleActivity.class);
+                        intent9.putExtra("codePosition",position);
+                        v.getContext().startActivity(intent9);
+                        break;
+                    case 10:
+                        Intent intent10 = new Intent(v.getContext(),codeSampleActivity.class);
+                        intent10.putExtra("codePosition",position);
+                        v.getContext().startActivity(intent10);
                         break;
 
                 }
